@@ -160,7 +160,7 @@ function RealEstateListings({
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         {listings.length > 0 ? (
           listings.map((property) => (
-            <Link href={'/coming_soon'}>
+            <Link key={property.id} href={'/coming_soon'}>
             <Card key={property.id} className="overflow-hidden">
               <CardHeader className="p-0 relative">
                 <img

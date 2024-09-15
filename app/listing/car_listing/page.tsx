@@ -1,4 +1,4 @@
-'use client'
+'use client';
 
 import { Heart } from 'lucide-react'
 import { Badge } from "@/components/ui/badge"

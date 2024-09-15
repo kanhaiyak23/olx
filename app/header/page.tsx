@@ -5,7 +5,7 @@ import {
   Search,
   MessageCircle,
   Bell,
-  ListIcon,
+  
 } from "lucide-react";
 import { useAuth, UserButton, useUser, SignInButton } from "@clerk/nextjs";
 // import { CardHeader } from "@/components/ui/card";
@@ -32,7 +32,7 @@ import {
   MobilePhoneListing,
   scooterListing,
   CommercialVehicleListing,
-  house,
+  
   RealEstateListing,
 } from "../data/alldata";
 // Import your components for each category
@@ -52,8 +52,8 @@ import {
 } from "@/components/ui/dialog";
 
 function OlxHeaderImproved() {
-  const [showNoMessages, setShowNoMessages] = useState(false);
-  const [showNoNotifications, setShowNoNotifications] = useState(false);
+  // const [showNoMessages, setShowNoMessages] = useState(false);
+  // const [showNoNotifications, setShowNoNotifications] = useState(false);
   const [selectedCategory, setSelectedCategory] = useState(""); // State to hold the selected category
   const { isSignedIn } = useAuth();
   const [successMessage, setSuccessMessage] = useState("");

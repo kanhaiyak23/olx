@@ -1,19 +1,21 @@
 'use client'
 
 import { useState } from 'react'
-import { useRouter } from 'next/router'
+
 import { useParams } from 'next/navigation'
 import Image from 'next/image'
 import Link from 'next/link'
 import Header from '../../header/page'
 import Footer from '../../footer/page'
-import { ChevronDown, Search, MessageCircle, Bell, Heart, Share2, ChevronLeft, ChevronRight, ArrowUp } from 'lucide-react'
+import { Heart, Share2, ChevronLeft, ChevronRight, ArrowUp } from 'lucide-react'
 // import { Badge, Button, Card, CardContent } from "@/components/ui"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 // import carDetails from '../../data/alldata'
-
+type Params = {
+  id: string;
+};
 
 const carDetailsf =[ {
 
@@ -51,9 +53,9 @@ const carDetailsf =[ {
   }
 }
 ]
-interface CarDetailsParams {
-  id: string; // or number, depending on your ID type
-}
+// interface CarDetailsParams {
+//   id: string; // or number, depending on your ID type
+// }
 
 const relatedAds = [
   { id: 1, image: 'https://i.pinimg.com/originals/7f/25/92/7f25923d54da53ec4efbf69260c6cd2c.jpg', price: 525000, title: 'Honda City V MT Exclusive Edition', year: 2017 },
@@ -70,9 +72,15 @@ const quickLinks = [
   'Used Cars Priced Between 7 Lakhs and 8 Lakhs in Mumbai',
 ]
 export default function CarDetails() {
-  const { id } = useParams(); // Get the car ID from the URL parameters
-  console.log(id); // Get the car ID from the URL
   
+  const params = useParams<Params>(); // Specify the type for useParams
+
+  // Check if params is null and handle it appropriately
+  if (!params) {
+    return <div>No parameters available!</div>; // Handle the case where params are not available
+  }
+
+  const { id } = params;
   // Find the car details based on the ID
   const cardetail = carDetailsf.find((car) => car.id === id);
 
