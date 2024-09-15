@@ -205,13 +205,13 @@ function OlxHeaderImproved() {
     }
 
     // If neither model nor title exists, fallback to checking the location
-    return (
-      (listing.location &&
-        listing.location.toLowerCase().includes(queryLowerCase)) || // Check location
-      (listing.price && listing.price.toString().includes(searchQuery)) || // Check price
-      (listing.year && listing.year.toString().includes(searchQuery)) || // Check year if applicable
-      (listing.mileage && listing.mileage.toString().includes(searchQuery)) // Check mileage if applicable
-    );
+    // return (
+    //   (listing.location &&
+    //     listing.location.toLowerCase().includes(queryLowerCase)) || // Check location
+    //   (listing.price && listing.price.toString().includes(searchQuery)) || // Check price
+    //   (listing.year && listing.year.toString().includes(searchQuery)) || // Check year if applicable
+    //   (listing.mileage && listing.mileage.toString().includes(searchQuery)) // Check mileage if applicable
+    // );
   });
 
   return (
@@ -298,7 +298,7 @@ function OlxHeaderImproved() {
                   <UserButton />
                 </div>
               ) : (
-                <SignInButton mode="modal" redirectUrl="/home_page" />
+                <SignInButton mode="modal"  />
               )}
               <Dialog>
                 <DialogTrigger asChild>
@@ -318,9 +318,9 @@ function OlxHeaderImproved() {
 
               {/* <Dialog>
                 <DialogTrigger>
-                  <div className="bg-white border-2 border-[#002F34] text-[#002F34] font-bold py-1 px-4 rounded-full">
+                  <Button className="bg-white border-2 border-[#002F34] text-[#002F34] font-bold py-1 px-4 rounded-full">
                     + SELL
-                  </div>
+                  </Button>
                 </DialogTrigger>
                 <DialogContent>
                   <DialogHeader>
@@ -399,7 +399,7 @@ function OlxHeaderImproved() {
                     <CardHeader className="p-0 relative">
                       <img
                         src={listing.image}
-                        alt={listing.model}
+                        // alt={listing.model}
                         className="w-full h-48 object-cover"
                       />
                       <button className="absolute top-2 right-2 p-1 bg-white rounded-full">
@@ -423,9 +423,10 @@ function OlxHeaderImproved() {
                           {/* {listing.year} - {listing.mileage.toLocaleString()} km */}
                         </Badge>
                       </div>
-                      <h3 className="text-xl font-semibold mb-2">
+                      {/* <h3 className="text-xl font-semibold mb-2">
+                        
                         {listing.model}
-                      </h3>
+                      </h3> */}
                       <p className="text-sm text-gray-500">
                         {listing.location}
                       </p>
