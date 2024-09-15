@@ -36,7 +36,7 @@ import {
   RealEstateListing,
 } from "../data/alldata";
 // Import your components for each category
-import CarListings from "../listing/car_listing/page";
+// import CarListings from "../listing/car_listing/page";
 import Motorcycles from "../listing/motorcycles/page";
 import MobileListing from "../listing/mobile_listing/page";
 import ScooterListing from "../listing/scooter/page";
@@ -90,8 +90,8 @@ function OlxHeaderImproved() {
 
   const renderContent = () => {
     switch (selectedCategory) {
-      case "Cars":
-        return <CarListings />;
+      // case "Cars":
+      //   return <CarListings />;
       case "Motorcycles":
         return <Motorcycles />;
       case "Mobile Phones":
@@ -107,7 +107,7 @@ function OlxHeaderImproved() {
       case "":
         return (
           <div>
-            <CarListings />
+            {/* <CarListings /> */}
             <Motorcycles />
             <MobileListing />
             <RealEstateListings />
