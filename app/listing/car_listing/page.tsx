@@ -4,7 +4,8 @@ import { Heart } from 'lucide-react'
 import { Badge } from "@/components/ui/badge"
 import { Card, CardContent, CardFooter, CardHeader } from "@/components/ui/card"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
-import  Link  from 'next/link'
+import Link from 'next/link'
+
 interface CarListing {
   id: string
   image: string
@@ -36,7 +37,6 @@ const sampleListings: CarListing[] = [
     date: 'Aug 16',
     features: ['WARRANTY', 'ROADSIDE ASSISTANCE'],
     isFeatured: true
-
   },
   {
     id: '2',
@@ -100,7 +100,7 @@ const sampleListings: CarListing[] = [
   }
 ]
 
-function CarListings({ listings = sampleListings, searchTerm = "car", totalAds = 3645 }) {
+function CarListings({ listings = sampleListings, searchTerm = "car", totalAds = 3645 }: CarListingsProps) {
   return (
     <div className="container mx-auto p-4">
       <div className="flex justify-between items-center mb-4">
@@ -122,49 +122,40 @@ function CarListings({ listings = sampleListings, searchTerm = "car", totalAds =
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         {listings.length > 0 ? (
           listings.map((car) => (
-            // <Link key={car.id} href={`/car/${car.id}`}>
-            <Link  key = {car.id}href={'/coming_soon'}>
-              
-             <Card key={car.id} className="overflow-hidden">
-              <CardHeader className="p-0 relative">
-                <img src={car.image} alt={car.model} className="w-full h-48 object-cover" />
-                <button className="absolute top-2 right-2 p-1 bg-white rounded-full">
-                  <Heart className="h-6 w-6 text-gray-500" />
-                </button>
-                {car.isFeatured && (
-                  <Badge className="absolute top-2 left-2" variant="secondary">
-                    FEATURED
-                  </Badge>
-                )}
-              </CardHeader>
-              <CardContent className="p-4">
-                <div className="flex justify-between items-start mb-2">
-                  <h2 className="text-2xl font-bold">₹ {car.price.toLocaleString()}</h2>
-                  <Badge variant="outline" className="text-xs">
-                    {car.year} - {car.mileage.toLocaleString()} km
-                  </Badge>
-                </div>
-                <h3 className="text-xl font-semibold mb-2">{car.model}</h3>
-                <p className="text-sm text-gray-500">{car.location}</p>
-              </CardContent>
-              <CardFooter className="p-4 pt-0 flex justify-between items-center">
-                <p className="text-sm text-gray-500">{car.date}</p>
-                <div className="flex items-center space-x-2">
-                  {car.features.map((feature, index) => (
-                    <Badge key={index} variant="secondary" className="text-xs">
-                      {feature}
-                    </Badge>
-                  ))}
-                  {car.features.length > 1 && (
-                    <Badge variant="secondary" className="text-xs cursor-pointer">
-                      +{car.features.length - 1}
+            <Link key={car.id} href={'/coming_soon'}>
+              <Card key={car.id} className="overflow-hidden">
+                <CardHeader className="p-0 relative">
+                  <img src={car.image} alt={car.model} className="w-full h-48 object-cover" />
+                  <button className="absolute top-2 right-2 p-1 bg-white rounded-full">
+                    <Heart className="h-6 w-6 text-gray-500" />
+                  </button>
+                  {car.isFeatured && (
+                    <Badge className="absolute top-2 left-2" variant="secondary">
+                      FEATURED
                     </Badge>
                   )}
-                </div>
-              </CardFooter>
-              
-            </Card>
-            
+                </CardHeader>
+                <CardContent className="p-4">
+                  <div className="flex justify-between items-start mb-2">
+                    <h2 className="text-2xl font-bold">₹ {car.price.toLocaleString()}</h2>
+                    <Badge variant="outline" className="text-xs">
+                      {car.year} - {car.mileage.toLocaleString()} km
+                    </Badge>
+                  </div>
+                  <h3 className="text-xl font-semibold mb-2">{car.model}</h3>
+                  <p className="text-sm text-gray-500">{car.location}</p>
+                </CardContent>
+                <CardFooter className="p-4 pt-0 flex justify-between items-center">
+                  <p className="text-sm text-gray-500">{car.date}</p>
+                  <div className="flex items-center space-x-2">
+                    {car.features.map((feature, index) => (
+                      <Badge key={index} variant="secondary" className="text-xs">
+                        {feature}
+                      </Badge>
+                    ))}
+                  </div>
+                </CardFooter>
+              </Card>
             </Link>
           ))
         ) : (
@@ -174,6 +165,5 @@ function CarListings({ listings = sampleListings, searchTerm = "car", totalAds =
     </div>
   )
 }
-
 
 export default CarListings

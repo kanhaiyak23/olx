@@ -117,7 +117,7 @@ function CommercialVehiclesListings({ listings = sampleListings, searchTerm = "C
   return (
     <div className="container mx-auto p-4">
       <div className="flex justify-between items-center mb-4">
-        <h1 className="text-2xl font-bold">Showing results for "{searchTerm}"</h1>
+        <h1 className="text-2xl font-bold">Showing results for {searchTerm}</h1>
         <Badge variant="secondary" className="text-lg">{totalAds} Ads</Badge>
       </div>
       <div className="flex justify-end mb-4">
@@ -135,7 +135,7 @@ function CommercialVehiclesListings({ listings = sampleListings, searchTerm = "C
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         {listings.length > 0 ? (
           listings.map((vehicle) => (
-            <Link href={'/coming_soon'}>
+            <Link key={vehicle.id}href={'/coming_soon'}>
             <Card key={vehicle.id} className="overflow-hidden">
               <CardHeader className="p-0 relative">
                 <img src={vehicle.image} alt={`${vehicle.brand} ${vehicle.model}`} className="w-full h-48 object-cover" />

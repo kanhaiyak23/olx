@@ -1,5 +1,5 @@
 "use client";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import {
   ChevronDown,
   Search,
@@ -56,37 +56,37 @@ function OlxHeaderImproved() {
   // const [showNoNotifications, setShowNoNotifications] = useState(false);
   const [selectedCategory, setSelectedCategory] = useState(""); // State to hold the selected category
   const { isSignedIn } = useAuth();
-  const [successMessage, setSuccessMessage] = useState("");
+  // const [successMessage, setSuccessMessage] = useState("");
   const { user } = useUser();
-  const router = useRouter();
-  useEffect(() => {
-    if (typeof window !== "undefined") {
-      const addGoogleTranslate = () => {
-        const script = document.createElement("script");
-        script.src =
-          "https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit";
-        script.async = true;
-        document.body.appendChild(script);
-      };
+  // const router = useRouter();
+  // useEffect(() => {
+  //   if (typeof window !== "undefined") {
+  //     const addGoogleTranslate = () => {
+  //       const script = document.createElement("script");
+  //       script.src =
+  //         "https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit";
+  //       script.async = true;
+  //       document.body.appendChild(script);
+  //     };
 
-      addGoogleTranslate();
+      // addGoogleTranslate();
 
-      window.googleTranslateElementInit = () => {
-        if (window.google && window.google.translate) {
-          new window.google.translate.TranslateElement(
-            {
-              pageLanguage: "en",
-              includedLanguages: "en,hi", // Enable English and Hindi
-              layout:
-                window.google.translate.TranslateElement.InlineLayout.SIMPLE, // Ensure InlineLayout is available
-              autoDisplay: false,
-            },
-            "google_translate_element"
-          );
-        }
-      };
-    }
-  }, []);
+  //     window.googleTranslateElementInit = () => {
+  //       if (window.google && window.google.translate) {
+  //         new window.google.translate.TranslateElement(
+  //           {
+  //             pageLanguage: "en",
+  //             includedLanguages: "en,hi", // Enable English and Hindi
+  //             layout:
+  //               window.google.translate.TranslateElement.InlineLayout.SIMPLE, // Ensure InlineLayout is available
+  //             autoDisplay: false,
+  //           },
+  //           "google_translate_element"
+  //         );
+  //       }
+  //     };
+  //   }
+  // }, []);
 
   const renderContent = () => {
     switch (selectedCategory) {
@@ -137,10 +137,10 @@ function OlxHeaderImproved() {
     }
   };
 
-  const handleSignInSuccess = () => {
-    setSuccessMessage("Signed in successfully! Redirecting...");
-    router.push("/home_page");
-  };
+  // const handleSignInSuccess = () => {
+  //   setSuccessMessage("Signed in successfully! Redirecting...");
+  //   router.push("/home_page");
+  // };
   const [searchQuery, setSearchQuery] = useState("");
 
   // Combine both car and commercial vehicle listings into one array
@@ -390,7 +390,7 @@ function OlxHeaderImproved() {
         {searchQuery && (
           <div className="mt-4">
             <h2 className="text-lg font-semibold">
-              Search Results for "{searchQuery}":
+              Search Results for {searchQuery}:
             </h2>
             {filteredListings.length > 0 ? (
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-2">
@@ -457,17 +457,17 @@ function OlxHeaderImproved() {
                 ))}
               </div>
             ) : (
-              <p>No listings found for "{searchQuery}".</p>
+              <p>No listings found for {searchQuery}.</p>
             )}
           </div>
         )}
 
         {renderContent()}
-        {successMessage && (
+        {/* {successMessage && (
           <div className="text-green-500 text-center mb-4">
             {successMessage}
-          </div>
-        )}
+          </div> */}
+        {/* )} */}
       </main>
     </div>
   );

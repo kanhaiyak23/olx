@@ -21,7 +21,7 @@ export interface CarListing {
   sellerName: string
   sellerImage: string
   images: string[]
-  overview: {}
+  overview: object
 }
 
 export interface CarListingsProps {

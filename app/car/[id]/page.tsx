@@ -74,7 +74,7 @@ const quickLinks = [
 export default function CarDetails() {
   
   const params = useParams<Params>(); // Specify the type for useParams
-
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
   // Check if params is null and handle it appropriately
   if (!params) {
     return <div>No parameters available!</div>; // Handle the case where params are not available
@@ -84,7 +84,7 @@ export default function CarDetails() {
   // Find the car details based on the ID
   const cardetail = carDetailsf.find((car) => car.id === id);
 
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  
 
   if (!cardetail) {
     return <div>Car not found!</div>;  // Handle the case where the car is not found
