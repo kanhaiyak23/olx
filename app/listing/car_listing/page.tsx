@@ -100,7 +100,7 @@ const sampleListings: CarListing[] = [
   }
 ]
 
-function CarListings({ listings = sampleListings, searchTerm = "car", totalAds = 3645 }: CarListingsProps) {
+const CarListings: React.FC<CarListingsProps> = ({ listings = sampleListings, searchTerm = "car", totalAds = 3645 }) => {
   return (
     <div className="container mx-auto p-4">
       <div className="flex justify-between items-center mb-4">
