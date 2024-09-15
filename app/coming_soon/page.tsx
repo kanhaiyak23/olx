@@ -3,17 +3,17 @@
 import { useState } from 'react'
 // import { Button } from "@/components/ui/button"
 // import { Input } from "@/components/ui/input"
-import { Mail, Clock } from 'lucide-react'
+import {  Clock } from 'lucide-react'
 
  function ComingSoon() {
-  const [email, setEmail] = useState('')
+  // const [email, setEmail] = useState('')
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault()
-    // Here you would typically send the email to your server
-    console.log('Submitted email:', email)
-    setEmail('')
-  }
+  // const handleSubmit = (e: React.FormEvent) => {
+  //   e.preventDefault()
+  //   // Here you would typically send the email to your server
+  //   console.log('Submitted email:', email)
+  //   setEmail('')
+  // }
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-purple-700 to-indigo-900 flex flex-col items-center justify-center text-white p-4">

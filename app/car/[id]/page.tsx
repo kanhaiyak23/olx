@@ -8,11 +8,11 @@ import Link from 'next/link'
 import Header from '../../header/page'
 import Footer from '../../footer/page'
 import { Heart, Share2, ChevronLeft, ChevronRight, ArrowUp } from 'lucide-react'
-// import { Badge, Button, Card, CardContent } from "@/components/ui"
+
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
-// import carDetails from '../../data/alldata'
+
 type Params = {
   id: string;
 };
