@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+// import { useState } from 'react'
 // import { Button } from "@/components/ui/button"
 // import { Input } from "@/components/ui/input"
 import {  Clock } from 'lucide-react'
@@ -59,7 +59,7 @@ import {  Clock } from 'lucide-react'
 
         <div className="flex items-center justify-center space-x-2 text-sm mt-4">
           <Clock size={16} />
-          <span>We're launching soon. Stay tuned!</span>
+          <span>We are launching soon. Stay tuned!</span>
         </div>
       </div>
     </div>

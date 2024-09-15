@@ -19,7 +19,7 @@ export function ComingSoon() {
     <div className="min-h-screen bg-gradient-to-br from-purple-700 to-indigo-900 flex flex-col items-center justify-center text-white p-4">
       <div className="max-w-md w-full space-y-8 text-center">
         <h1 className="text-4xl font-bold">Coming Soon</h1>
-        <p className="text-xl">We're working hard to bring you something amazing. Stay tuned!</p>
+        <p className="text-xl">We are working hard to bring you something amazing. Stay tuned!</p>
         
         <div className="flex justify-center space-x-4">
           <div className="text-center">
@@ -59,7 +59,7 @@ export function ComingSoon() {
 
         <div className="flex items-center justify-center space-x-2 text-sm mt-4">
           <Clock size={16} />
-          <span>We're launching soon. Stay tuned!</span>
+          <span>We are launching soon. Stay tuned!</span>
         </div>
       </div>
     </div>

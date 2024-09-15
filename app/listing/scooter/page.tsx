@@ -110,7 +110,7 @@ function ScooterListings({ listings = sampleListings, searchTerm = "scooter", to
   return (
     <div className="container mx-auto p-4">
       <div className="flex justify-between items-center mb-4">
-        <h1 className="text-2xl font-bold">Showing results for "{searchTerm}"</h1>
+        <h1 className="text-2xl font-bold">Showing results for {searchTerm}</h1>
         <Badge variant="secondary" className="text-lg">{totalAds} Ads</Badge>
       </div>
       <div className="flex justify-end mb-4">
@@ -128,7 +128,8 @@ function ScooterListings({ listings = sampleListings, searchTerm = "scooter", to
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         {listings.length > 0 ? (
           listings.map((scooter) => (
-            <Link href={'/coming_soon'}>
+            <Link key={scooter.id}
+            href={'/coming_soon'}>
             
             <Card key={scooter.id} className="overflow-hidden">
               <CardHeader className="p-0 relative">

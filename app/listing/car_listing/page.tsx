@@ -100,11 +100,11 @@ const sampleListings: CarListing[] = [
   }
 ]
 
-function CarListings({ listings = sampleListings, searchTerm = "car", totalAds = 3645 }: CarListingsProps) {
+function CarListings({ listings = sampleListings, searchTerm = "car", totalAds = 3645 }) {
   return (
     <div className="container mx-auto p-4">
       <div className="flex justify-between items-center mb-4">
-        <h1 className="text-2xl font-bold">Showing results for "{searchTerm}"</h1>
+        <h1 className="text-2xl font-bold">Showing results for {searchTerm}</h1>
         <Badge variant="secondary" className="text-lg">{totalAds} Ads</Badge>
       </div>
       <div className="flex justify-end mb-4">
@@ -123,7 +123,7 @@ function CarListings({ listings = sampleListings, searchTerm = "car", totalAds =
         {listings.length > 0 ? (
           listings.map((car) => (
             // <Link key={car.id} href={`/car/${car.id}`}>
-            <Link href={'/coming_soon'}>
+            <Link  key = {car.id}href={'/coming_soon'}>
               
              <Card key={car.id} className="overflow-hidden">
               <CardHeader className="p-0 relative">
