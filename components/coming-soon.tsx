@@ -59,7 +59,7 @@ export function ComingSoon() {
 
         <div className="flex items-center justify-center space-x-2 text-sm mt-4">
           <Clock size={16} />
-          {/* <span>We are launching soon. Stay tuned!</span> */}
+          <span>We are launching soon. Stay tuned! kk</span>
         </div>
       </div>
     </div>
