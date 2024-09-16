@@ -72,7 +72,7 @@ import { Facebook, Instagram, Twitter, Youtube } from 'lucide-react'
             <div className="text-sm">
               <Link href="#" className="hover:underline mr-4">Help</Link>
               <Link href="#" className="hover:underline">Sitemap</Link>
-              <p className="mt-2">All rights reserved © 2006-2024 OLX</p>
+              <p className="mt-2">All rights reserved © 2006-2024 </p>
             </div>
           </div>
         </div>

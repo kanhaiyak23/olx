@@ -8,6 +8,8 @@ import {
   
 } from "lucide-react";
 import { useAuth, UserButton, useUser, SignInButton } from "@clerk/nextjs";
+
+// const clerkPubKey = process.env.NEXT_PUBLIC_CLERK_FRONTEND_API;
 // import { CardHeader } from "@/components/ui/card";
 // import { Heart } from "lucide-react";
 import { Input } from "@/components/ui/input";
