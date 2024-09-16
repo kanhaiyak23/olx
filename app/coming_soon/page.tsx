@@ -59,7 +59,7 @@ import {  Clock } from 'lucide-react'
 
         <div className="flex items-center justify-center space-x-2 text-sm mt-4">
           <Clock size={16} />
-          <span></span></span>
+          <span></span>
         </div>
       </div>
     </div>
