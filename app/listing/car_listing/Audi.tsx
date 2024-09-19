@@ -122,7 +122,7 @@ function CarsListinggs({ listings = sampleListings, searchTerm = "car", totalAds
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         {listings.length > 0 ? (
           listings.map((car) => (
-            <Link key={car.id} href={'/coming_soon'}>
+            <Link key={car.id} href={`/car/${car.id}`}>
               <Card key={car.id} className="overflow-hidden">
                 <CardHeader className="p-0 relative">
                   <img src={car.image} alt={car.model} className="w-full h-48 object-cover" />

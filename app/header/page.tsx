@@ -5,7 +5,7 @@ import {
   Search,
   MessageCircle,
   Bell,
-  
+  CrossIcon,
 } from "lucide-react";
 import { useAuth, UserButton, useUser, SignInButton } from "@clerk/nextjs";
 
@@ -34,7 +34,6 @@ import {
   MobilePhoneListing,
   scooterListing,
   CommercialVehicleListing,
-  
   RealEstateListing,
 } from "../data/alldata";
 // Import your components for each category
@@ -71,7 +70,7 @@ function OlxHeaderImproved() {
   //       document.body.appendChild(script);
   //     };
 
-      // addGoogleTranslate();
+  // addGoogleTranslate();
 
   //     window.googleTranslateElementInit = () => {
   //       if (window.google && window.google.translate) {
@@ -265,15 +264,18 @@ function OlxHeaderImproved() {
                 <DialogTrigger>
                   <MessageCircle
                     size={24}
-                    className="text-gray-600 cursor-pointer"
+                    className="text-gray-500 cursor-pointer"
                   />
                 </DialogTrigger>
-                <DialogContent>
+                <DialogContent className="bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 p-6 rounded-lg shadow-lg">
+                  <button className="absolute top-3 right-3 text-white hover:text-red-500">
+                    {/* Assuming this is the close button */}
+                  </button>
                   <DialogHeader>
-                    <DialogTitle>Messages</DialogTitle>
+                    {/* <DialogTitle className="text-white text-lg font-semibold">Title</DialogTitle> */}
                   </DialogHeader>
-                  <div className="p-4 text-center">
-                    <p>No messages yet.</p>
+                  <div className="p-4 text-lg text-center text-green-400">
+                    <p>No messages yet</p>
                   </div>
                 </DialogContent>
               </Dialog>
@@ -282,7 +284,7 @@ function OlxHeaderImproved() {
                 <DialogTrigger>
                   <Bell size={24} className="text-gray-600 cursor-pointer" />
                 </DialogTrigger>
-                <DialogContent>
+                <DialogContent className="bg-gradient-to-r from-blue-500  to-pink-500 p-6 rounded-lg shadow-lg">
                   <DialogHeader>
                     <DialogTitle>Notifications</DialogTitle>
                   </DialogHeader>
@@ -300,12 +302,15 @@ function OlxHeaderImproved() {
                   <UserButton />
                 </div>
               ) : (
-                <SignInButton mode="modal"  />
+                <SignInButton mode="modal" />
               )}
               <Dialog>
                 <DialogTrigger asChild>
-                  <button className="bg-white border-2 border-[#002F34] text-[#002F34] font-bold py-1 px-4 rounded-full">
-                    + SELL
+                  <button className="relative inline-block text-[#002F34] font-bold py-1 px-4 rounded-full bg-white">
+                    <span className="absolute inset-0 bg-gradient-to-r from-yellow-500 via-blue-500 to-lime-600 rounded-full p-[1px]"></span>
+                    <span className="relative block bg-white rounded-full px-4 py-1 border-2 border-transparent">
+                      + SELL
+                    </span>
                   </button>
                 </DialogTrigger>
                 <DialogContent>

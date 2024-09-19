@@ -1,0 +1,231 @@
+[
+    {
+      "id": "1",
+      "title": "Honda City (2019)",
+      "subtitle": "[2017-2020] 1.5 V CVT i-VTEC",
+      "price": 715000,
+      "features": ["FEATURED", "VERIFIED SELLER"],
+      "fuelType": "PETROL",
+      "mileage": 63000,
+      "transmission": "AUTOMATIC",
+      "owner": "1st",
+      "location": "Charni Road, Mumbai",
+      "postingDate": "08-SEP-24",
+      "description": "Excellent condition single owner Honda city V petrol automatic top model car...",
+      "sellerName": "Jay Patel",
+      "sellerImage": "/placeholder.svg?height=50&width=50",
+      "images": [
+        "https://stimg.cardekho.com/images/carexteriorimages/930x620/Honda/City/9710/1677914238296/front-left-side-47.jpg",
+        "https://www.hondacarindia.com/_next/image?url=https%3A%2F%2Fwww.hondacarindia.com%2Fweb-data%2Fmodels-mobile%2F2023%2Fcity5thGen%2FDesign%2FExterior%2FNew-Front-Design.jpg&w=3840&q=75",
+        "https://www.v3cars.com/media/content/835677honda-city-facelift-front-exterior.webp"
+      ],
+      "overview": {
+        "location": "Opera House, Charni road, Mumbai",
+        "additionalInfo": [
+          { "label": "Accidental", "value": "No" },
+          { "label": "Battery Condition", "value": "New" },
+          { "label": "Vehicle Certified", "value": "Yes" },
+          { "label": "Color", "value": "White" },
+          { "label": "Engine Capacity", "value": "1500cc" },
+          { "label": "Insurance Type", "value": "Comprehensive" },
+          { "label": "Make Month", "value": "October" },
+          { "label": "Registration Place", "value": "MH" },
+          { "label": "Exchange", "value": "Yes" },
+          { "label": "Finance", "value": "Yes" },
+          { "label": "Service History", "value": "Available" },
+          { "label": "Tyre Condition", "value": "New" }
+        ]
+      }
+    },
+    {
+      "id": "2",
+      "title": "Maruti Swift (2018)",
+      "subtitle": "[2017-2021] ZXI+ AMT",
+      "price": 620000,
+      "features": ["VERIFIED SELLER"],
+      "fuelType": "PETROL",
+      "mileage": 45000,
+      "transmission": "AUTOMATIC",
+      "owner": "1st",
+      "location": "Andheri West, Mumbai",
+      "postingDate": "07-SEP-24",
+      "description": "Maruti Swift ZXI+ AMT in excellent condition. Single owner with full service history.",
+      "sellerName": "Rohan Mehta",
+      "sellerImage": "/placeholder.svg?height=50&width=50",
+      "images": [
+        "https://stimg.cardekho.com/images/carexteriorimages/930x620/Maruti/Swift/7389/1677914238296/front-left-side-47.jpg",
+        "https://www.marutisuzuki.com/images/swift/2021/model.jpg",
+        "https://www.v3cars.com/media/content/838377maruti-swift-facelift-front-exterior.webp"
+      ],
+      "overview": {
+        "location": "Lokhandwala, Andheri West, Mumbai",
+        "additionalInfo": [
+          { "label": "Accidental", "value": "No" },
+          { "label": "Battery Condition", "value": "Good" },
+          { "label": "Vehicle Certified", "value": "Yes" },
+          { "label": "Color", "value": "Red" },
+          { "label": "Engine Capacity", "value": "1200cc" },
+          { "label": "Insurance Type", "value": "Comprehensive" },
+          { "label": "Make Month", "value": "March" },
+          { "label": "Registration Place", "value": "MH" },
+          { "label": "Exchange", "value": "Yes" },
+          { "label": "Finance", "value": "No" },
+          { "label": "Service History", "value": "Available" },
+          { "label": "Tyre Condition", "value": "Good" }
+        ]
+      }
+    },
+    {
+      "id": "3",
+      "title": "Hyundai Creta (2020)",
+      "subtitle": "[2020-2022] SX Automatic",
+      "price": 1150000,
+      "features": ["FEATURED"],
+      "fuelType": "DIESEL",
+      "mileage": 40000,
+      "transmission": "AUTOMATIC",
+      "owner": "2nd",
+      "location": "Juhu, Mumbai",
+      "postingDate": "06-SEP-24",
+      "description": "Hyundai Creta SX Automatic in superb condition. Full service record available.",
+      "sellerName": "Ananya Verma",
+      "sellerImage": "/placeholder.svg?height=50&width=50",
+      "images": [
+        "https://stimg.cardekho.com/images/carexteriorimages/930x620/Hyundai/Creta/2020/1677914238296/front-left-side-47.jpg",
+        "https://www.hyundai.com/images/creta/exterior.jpg",
+        "https://www.v3cars.com/media/content/839477hyundai-creta-front-exterior.webp"
+      ],
+      "overview": {
+        "location": "Juhu Tara Road, Mumbai",
+        "additionalInfo": [
+          { "label": "Accidental", "value": "No" },
+          { "label": "Battery Condition", "value": "Good" },
+          { "label": "Vehicle Certified", "value": "Yes" },
+          { "label": "Color", "value": "Silver" },
+          { "label": "Engine Capacity", "value": "1600cc" },
+          { "label": "Insurance Type", "value": "Comprehensive" },
+          { "label": "Make Month", "value": "August" },
+          { "label": "Registration Place", "value": "MH" },
+          { "label": "Exchange", "value": "No" },
+          { "label": "Finance", "value": "Yes" },
+          { "label": "Service History", "value": "Available" },
+          { "label": "Tyre Condition", "value": "New" }
+        ]
+      }
+    },
+    {
+      "id": "4",
+      "title": "Toyota Fortuner (2017)",
+      "subtitle": "[2016-2018] 2.8 4x4 Automatic",
+      "price": 2300000,
+      "features": ["FEATURED", "VERIFIED SELLER"],
+      "fuelType": "DIESEL",
+      "mileage": 85000,
+      "transmission": "AUTOMATIC",
+      "owner": "1st",
+      "location": "Bandra, Mumbai",
+      "postingDate": "09-SEP-24",
+      "description": "Toyota Fortuner 4x4 automatic in mint condition with all service records.",
+      "sellerName": "Neha Sharma",
+      "sellerImage": "/placeholder.svg?height=50&width=50",
+      "images": [
+        "https://stimg.cardekho.com/images/carexteriorimages/930x620/Toyota/Fortuner/2017/1677914238296/front-left-side-47.jpg",
+        "https://www.toyota.com/images/fortuner/exterior.jpg",
+        "https://www.v3cars.com/media/content/840577toyota-fortuner-front-exterior.webp"
+      ],
+      "overview": {
+        "location": "Pali Hill, Bandra, Mumbai",
+        "additionalInfo": [
+          { "label": "Accidental", "value": "No" },
+          { "label": "Battery Condition", "value": "New" },
+          { "label": "Vehicle Certified", "value": "Yes" },
+          { "label": "Color", "value": "Black" },
+          { "label": "Engine Capacity", "value": "2800cc" },
+          { "label": "Insurance Type", "value": "Comprehensive" },
+          { "label": "Make Month", "value": "November" },
+          { "label": "Registration Place", "value": "MH" },
+          { "label": "Exchange", "value": "Yes" },
+          { "label": "Finance", "value": "No" },
+          { "label": "Service History", "value": "Available" },
+          { "label": "Tyre Condition", "value": "New" }
+        ]
+      }
+    },
+    {
+      "id": "5",
+      "title": "Mahindra Thar (2021)",
+      "subtitle": "[2021] LX 4-STR Convertible",
+      "price": 2000000,
+      "features": ["FEATURED"],
+      "fuelType": "DIESEL",
+      "mileage": 15000,
+      "transmission": "MANUAL",
+      "owner": "1st",
+      "location": "Dadar, Mumbai",
+      "postingDate": "10-SEP-24",
+      "description": "2021 Mahindra Thar LX in pristine condition. Hardly driven with full service history.",
+      "sellerName": "Amit Desai",
+      "sellerImage": "/placeholder.svg?height=50&width=50",
+      "images": [
+        "https://stimg.cardekho.com/images/carexteriorimages/930x620/Mahindra/Thar/2021/1677914238296/front-left-side-47.jpg",
+        "https://www.mahindra.com/images/thar/exterior.jpg",
+        "https://www.v3cars.com/media/content/841677mahindra-thar-front-exterior.webp"
+      ],
+      "overview": {
+        "location": "Shivaji Park, Dadar, Mumbai",
+        "additionalInfo": [
+          { "label": "Accidental", "value": "No" },
+          { "label": "Battery Condition", "value": "New" },
+          { "label": "Vehicle Certified", "value": "Yes" },
+          { "label": "Color", "value": "Red" },
+          { "label": "Engine Capacity", "value": "2200cc" },
+          { "label": "Insurance Type", "value": "Comprehensive" },
+          { "label": "Make Month", "value": "July" },
+          { "label": "Registration Place", "value": "MH" },
+          { "label": "Exchange", "value": "Yes" },
+          { "label": "Finance", "value": "Yes" },
+          { "label": "Service History", "value": "Available" },
+          { "label": "Tyre Condition", "value": "New" }
+        ]
+      }
+    },
+    {
+      "id": "6",
+      "title": "Kia Seltos (2020)",
+      "subtitle": "[2019-2021] HTK+ Automatic",
+      "price": 1450000,
+      "features": ["VERIFIED SELLER"],
+      "fuelType": "PETROL",
+      "mileage": 30000,
+      "transmission": "AUTOMATIC",
+      "owner": "1st",
+      "location": "Goregaon, Mumbai",
+      "postingDate": "11-SEP-24",
+      "description": "Kia Seltos HTK+ automatic in excellent condition with low mileage.",
+      "sellerName": "Pooja Soni",
+      "sellerImage": "/placeholder.svg?height=50&width=50",
+      "images": [
+        "https://stimg.cardekho.com/images/carexteriorimages/930x620/Kia/Seltos/2020/1677914238296/front-left-side-47.jpg",
+        "https://www.kia.com/images/seltos/exterior.jpg",
+        "https://www.v3cars.com/media/content/842677kia-seltos-front-exterior.webp"
+      ],
+      "overview": {
+        "location": "Goregaon East, Mumbai",
+        "additionalInfo": [
+          { "label": "Accidental", "value": "No" },
+          { "label": "Battery Condition", "value": "Good" },
+          { "label": "Vehicle Certified", "value": "Yes" },
+          { "label": "Color", "value": "Blue" },
+          { "label": "Engine Capacity", "value": "1500cc" },
+          { "label": "Insurance Type", "value": "Comprehensive" },
+          { "label": "Make Month", "value": "September" },
+          { "label": "Registration Place", "value": "MH" },
+          { "label": "Exchange", "value": "Yes" },
+          { "label": "Finance", "value": "Yes" },
+          { "label": "Service History", "value": "Available" },
+          { "label": "Tyre Condition", "value": "New" }
+        ]
+      }
+    }
+  ]
+  
