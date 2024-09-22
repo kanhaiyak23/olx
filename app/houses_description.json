@@ -1,0 +1,191 @@
+[
+    {
+      "id": "1",
+      "title": "3 BHK Apartment in Bandra West",
+      "subtitle": "Apartment",
+      "price": 8500000,
+      "features": ["PARKING", "SWIMMING POOL"],
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "area": 1200,
+      "location": "Mumbai, Maharashtra",
+      "postingDate": "16-AUG-24",
+      "description": "Spacious 3 BHK apartment in the heart of Bandra West, with modern amenities and a premium location.",
+      "sellerName": "Rohit Sharma",
+      "sellerImage": "/placeholder.svg?height=50&width=50",
+      "images": [
+        "https://www.guptasen.com/wp-content/uploads/2021/05/chand-terraces-3-BHK-bandra.jpg",
+        "https://dyimg2.realestateindia.com/prop_images/3206028/1218682_1-350x350.jpg",
+        "https://housing-images.n7net.in/01c16c28/30b089e96f915dd83b77696ba84dfa01/v0/medium/3_bhk_apartment-for-sale-bandra_west-Mumbai-hall.jpg"
+      ],
+      "overview": {
+        "location": "Mumbai, Maharashtra",
+        "additionalInfo": [
+          { "label": "Type", "value": "Apartment" },
+          { "label": "Area", "value": "1200 sqft" },
+          { "label": "Bedrooms", "value": "3" },
+          { "label": "Bathrooms", "value": "2" },
+          { "label": "Floor", "value": "7th" },
+          { "label": "Age", "value": "5 Years" },
+          { "label": "Parking", "value": "Yes" },
+          { "label": "Swimming Pool", "value": "Yes" }
+        ]
+      }
+    },
+    {
+      "id": "2",
+      "title": "4 BHK Villa in Koramangala",
+      "subtitle": "House",
+      "price": 15000000,
+      "features": ["GARDEN", "MODULAR KITCHEN"],
+      "bedrooms": 4,
+      "bathrooms": 3,
+      "area": 2500,
+      "location": "Bangalore, Karnataka",
+      "postingDate": "30-AUG-24",
+      "description": "Luxurious 4 BHK villa with a private garden and a state-of-the-art modular kitchen.",
+      "sellerName": "Meera Singh",
+      "sellerImage": "/placeholder.svg?height=50&width=50",
+      "images": [
+        "https://a0.muscache.com/im/pictures/miso/Hosting-1009070086528145083/original/0bce37b9-068e-4d89-852d-b5af9f26dec4.jpeg?im_w=720",
+        "https://a0.muscache.com/im/pictures/miso/Hosting-1009070086528145083/original/8753c306-2329-46c2-9131-956450d18c4a.jpeg?im_w=720",
+        "https://housing-images.n7net.in/01c16c28/56bb272ca59a0e9c51e01d56736bf20d/v0/medium/4_bhk_independent_house-for-sale-koramangala-Bangalore-others.jpg"
+      ],
+      "overview": {
+        "location": "Bangalore, Karnataka",
+        "additionalInfo": [
+          { "label": "Type", "value": "House" },
+          { "label": "Area", "value": "2500 sqft" },
+          { "label": "Bedrooms", "value": "4" },
+          { "label": "Bathrooms", "value": "3" },
+          { "label": "Garden", "value": "Yes" },
+          { "label": "Modular Kitchen", "value": "Yes" }
+        ]
+      }
+    },
+    {
+      "id": "3",
+      "title": "2 BHK Flat in Andheri East",
+      "subtitle": "Apartment",
+      "price": 6000000,
+      "features": ["GYM", "24/7 SECURITY"],
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "area": 950,
+      "location": "Mumbai, Maharashtra",
+      "postingDate": "26-AUG-24",
+      "description": "Modern 2 BHK flat in Andheri East with access to a gym and 24/7 security services.",
+      "sellerName": "Sanjay Gupta",
+      "sellerImage": "/placeholder.svg?height=50&width=50",
+      "images": [
+        "https://images.nobroker.in/images/8a9fd7838931fd7c0189355d9f602c0c/8a9fd7838931fd7c0189355d9f602c0c_879_536320_large.jpg",
+        "https://is1-2.housingcdn.com/01c16c28/0488ae98e8bdf4c0214929d00f656e79/v0/medium/2_bhk_apartment-for-sale-andheri_west-Mumbai-living_room.jpg",
+        "https://is1-3.housingcdn.com/01c16c28/540e3f0f2c4c6e3e74ff4e101f0f9d60/v0/medium/2_bhk_apartment-for-sale-andheri_west-Mumbai-others.jpg"
+      ],
+      "overview": {
+        "location": "Mumbai, Maharashtra",
+        "additionalInfo": [
+          { "label": "Type", "value": "Apartment" },
+          { "label": "Area", "value": "950 sqft" },
+          { "label": "Bedrooms", "value": "2" },
+          { "label": "Bathrooms", "value": "2" },
+          { "label": "Gym", "value": "Yes" },
+          { "label": "Security", "value": "24/7" }
+        ]
+      }
+    },
+    {
+      "id": "4",
+      "title": "5 BHK Independent House in Vasant Vihar",
+      "subtitle": "House",
+      "price": 20000000,
+      "features": ["TERRACE", "SERVANT QUARTER"],
+      "bedrooms": 5,
+      "bathrooms": 4,
+      "area": 3500,
+      "location": "New Delhi, Delhi",
+      "postingDate": "Today",
+      "description": "A grand 5 BHK independent house in the prestigious Vasant Vihar locality, featuring a large terrace and a servant quarter.",
+      "sellerName": "Arun Mehta",
+      "sellerImage": "/placeholder.svg?height=50&width=50",
+      "images": [
+        "https://img.squareyards.com/secondaryPortal/638452788485847086-0503241140484048.jpg",
+        "https://is1-3.housingcdn.com/fb15c03b/c5f497ff965a8d3f9ee55e5573a1e7c0/v0/medium.jpg",
+        "https://is1-3.housingcdn.com/4f2250e8/be096597009307496961f8b8b055552d/v0/fs.jpeg"
+      ],
+      "overview": {
+        "location": "New Delhi, Delhi",
+        "additionalInfo": [
+          { "label": "Type", "value": "House" },
+          { "label": "Area", "value": "3500 sqft" },
+          { "label": "Bedrooms", "value": "5" },
+          { "label": "Bathrooms", "value": "4" },
+          { "label": "Terrace", "value": "Yes" },
+          { "label": "Servant Quarter", "value": "Yes" }
+        ]
+      }
+    },
+    {
+      "id": "5",
+      "title": "1 BHK Apartment in Kharadi",
+      "subtitle": "Apartment",
+      "price": 4500000,
+      "features": ["CLUBHOUSE", "POWER BACKUP"],
+      "bedrooms": 1,
+      "bathrooms": 1,
+      "area": 650,
+      "location": "Pune, Maharashtra",
+      "postingDate": "Today",
+      "description": "1 BHK apartment in Kharadi with clubhouse access and power backup facilities.",
+      "sellerName": "Anita Desai",
+      "sellerImage": "/placeholder.svg?height=50&width=50",
+      "images": [
+        "https://is1-2.housingcdn.com/01c16c28/d17df9fca95c2993806d847d9a3add46/v0/fs/2_bhk_apartment-for-sale-kharadi-Pune-others.jpg",
+        "https://is1-3.housingcdn.com/01c16c28/704168b19e53759299b52f615296fb3b/v0/fs/2_bhk_apartment-for-sale-kharadi-Pune-balcony.jpg",
+        "https://housing-images.n7net.in/01c16c28/0a17775fd3c8f62320a4cbe00601d6d9/v0/small/2_bhk_apartment-for-sale-upper_kharadi-Pune-others.jpg"
+      ],
+      "overview": {
+        "location": "Pune, Maharashtra",
+        "additionalInfo": [
+          { "label": "Type", "value": "Apartment" },
+          { "label": "Area", "value": "650 sqft" },
+          { "label": "Bedrooms", "value": "1" },
+          { "label": "Bathrooms", "value": "1" },
+          { "label": "Clubhouse", "value": "Yes" },
+          { "label": "Power Backup", "value": "Yes" }
+        ]
+      }
+    },
+    {
+      "id": "6",
+      "title": "3 BHK Villa in ECR",
+      "subtitle": "House",
+      "price": 12000000,
+      "features": ["SEA VIEW", "PRIVATE BEACH ACCESS"],
+      "bedrooms": 3,
+      "bathrooms": 3,
+      "area": 1800,
+      "location": "Chennai, Tamil Nadu",
+      "postingDate": "Today",
+      "description": "Exclusive 3 BHK villa in ECR with breathtaking sea views and private beach access.",
+      "sellerName": "Kumar Swamy",
+      "sellerImage": "/placeholder.svg?height=50&width=50",
+      "images": [
+        "https://www.ziraholidays.com/wp-content/uploads/2022/01/the-landmark-villa-ecr-for-hire.jpg",
+        "https://www.ziraholidays.com/wp-content/uploads/2022/01/ecr-holidays-landmark-villa-ecr.jpg",
+        "https://www.ziraholidays.com/wp-content/uploads/2022/01/ecr-beach-house-kovalam-for-rent.jpg"
+      ],
+      "overview": {
+        "location": "Chennai, Tamil Nadu",
+        "additionalInfo": [
+          { "label": "Type", "value": "House" },
+          { "label": "Area", "value": "1800 sqft" },
+          { "label": "Bedrooms", "value": "3" },
+          { "label": "Bathrooms", "value": "3" },
+          { "label": "Sea View", "value": "Yes" },
+          { "label": "Beach Access", "value": "Private" }
+        ]
+      }
+    }
+  ]
+  

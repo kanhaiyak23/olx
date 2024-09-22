@@ -1,6 +1,6 @@
 'use client'
 
-import { Heart } from 'lucide-react'
+
 import { Badge } from "@/components/ui/badge"
 import { Card, CardContent, CardFooter, CardHeader } from "@/components/ui/card"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
@@ -106,11 +106,11 @@ const sampleListings: ScooterListing[] = [
   }
 ]
 
-function ScooterListings({ listings = sampleListings, searchTerm = "scooter", totalAds = 3456 }: ScooterListingsProps) {
+function ScooterListings({ listings = sampleListings, searchTerm = "Scooter", totalAds = 3456 }: ScooterListingsProps) {
   return (
     <div className="container mx-auto p-4">
       <div className="flex justify-between items-center mb-4">
-        <h1 className="text-2xl font-bold">Showing results for {searchTerm}</h1>
+        <h1 className="text-2xl font-bold"> {searchTerm}</h1>
         <Badge variant="secondary" className="text-lg">{totalAds} Ads</Badge>
       </div>
       <div className="flex justify-end mb-4">
@@ -129,14 +129,12 @@ function ScooterListings({ listings = sampleListings, searchTerm = "scooter", to
         {listings.length > 0 ? (
           listings.map((scooter) => (
             <Link key={scooter.id}
-            href={'/coming_soon'}>
+            href={`/scooters/${scooter.id}`}>
             
             <Card key={scooter.id} className="overflow-hidden">
               <CardHeader className="p-0 relative">
                 <img src={scooter.image} alt={`${scooter.brand} ${scooter.model}`} className="w-full h-48 object-cover" />
-                <button className="absolute top-2 right-2 p-1 bg-white rounded-full" aria-label="Add to favorites">
-                  <Heart className="h-6 w-6 text-gray-500" />
-                </button>
+                
                 {scooter.isFeatured && (
                   <Badge className="absolute top-2 left-2" variant="secondary">
                     FEATURED

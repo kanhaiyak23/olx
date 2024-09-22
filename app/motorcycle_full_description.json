@@ -1,0 +1,232 @@
+[
+    {
+      "id": "1",
+      "title": "Bajaj Pulsar NS200",
+      "subtitle": "2018 Model",
+      "price": 85000,
+      "features": ["ABS", "DIGITAL SPEEDOMETER"],
+      "mileage": 15000,
+      "fuelType": "PETROL",
+      "transmission": "MANUAL",
+      "owner": "1st",
+      "location": "Pune",
+      "postingDate": "16-AUG-24",
+      "description": "Bajaj Pulsar NS200 in excellent condition with low mileage.",
+      "sellerName": "Rahul Kumar",
+      "sellerImage": "/placeholder.svg?height=50&width=50",
+      "images": [
+        "https://imgd.aeplcdn.com/1056x594/n/bw/models/colors/bajaj-select-model-sparkle-black-blue-single-disc-1671022733142.png?q=80",
+        "https://imgd.aeplcdn.com/1056x594/n/bw/models/colors/bajaj-select-model-sparkle-black-blue-single-disc-1671022733142.png?q=80",
+        "https://imgd.aeplcdn.com/1056x594/n/bw/models/colors/bajaj-select-model-sparkle-black-blue-single-disc-1671022733142.png?q=80"
+      ],
+      "overview": {
+        "location": "Pune",
+        "additionalInfo": [
+          { "label": "Accidental", "value": "No" },
+          { "label": "Battery Condition", "value": "Good" },
+          { "label": "Vehicle Certified", "value": "Yes" },
+          { "label": "Color", "value": "Black" },
+          { "label": "Engine Capacity", "value": "200cc" },
+          { "label": "Insurance Type", "value": "Comprehensive" },
+          { "label": "Make Month", "value": "January" },
+          { "label": "Registration Place", "value": "MH" },
+          { "label": "Exchange", "value": "Yes" },
+          { "label": "Finance", "value": "Yes" },
+          { "label": "Service History", "value": "Available" },
+          { "label": "Tyre Condition", "value": "Good" }
+        ]
+      }
+    },
+    {
+      "id": "2",
+      "title": "Royal Enfield Classic 350",
+      "subtitle": "2020 Model",
+      "price": 150000,
+      "features": ["DUAL CHANNEL ABS"],
+      "mileage": 8000,
+      "fuelType": "PETROL",
+      "transmission": "MANUAL",
+      "owner": "1st",
+      "location": "Mumbai",
+      "postingDate": "30-AUG-24",
+      "description": "Royal Enfield Classic 350 in pristine condition with low mileage.",
+      "sellerName": "Sameer Rao",
+      "sellerImage": "/placeholder.svg?height=50&width=50",
+      "images": [
+        "https://imgd.aeplcdn.com/664x374/bw/ec/35849/Royal-Enfield-Classic--350-Signals-Side-134409.jpg?wm=0&q=80",
+        "https://imgd.aeplcdn.com/664x374/bw/ec/35849/Royal-Enfield-Classic--350-Signals-Side-134409.jpg?wm=0&q=80",
+        "https://imgd.aeplcdn.com/664x374/bw/ec/35849/Royal-Enfield-Classic--350-Signals-Side-134409.jpg?wm=0&q=80"
+      ],
+      "overview": {
+        "location": "Mumbai",
+        "additionalInfo": [
+          { "label": "Accidental", "value": "No" },
+          { "label": "Battery Condition", "value": "Good" },
+          { "label": "Vehicle Certified", "value": "Yes" },
+          { "label": "Color", "value": "Green" },
+          { "label": "Engine Capacity", "value": "350cc" },
+          { "label": "Insurance Type", "value": "Comprehensive" },
+          { "label": "Make Month", "value": "June" },
+          { "label": "Registration Place", "value": "MH" },
+          { "label": "Exchange", "value": "Yes" },
+          { "label": "Finance", "value": "No" },
+          { "label": "Service History", "value": "Available" },
+          { "label": "Tyre Condition", "value": "Good" }
+        ]
+      }
+    },
+    {
+      "id": "3",
+      "title": "Yamaha FZ-S",
+      "subtitle": "2017 Model",
+      "price": 65000,
+      "features": ["DISC BRAKE", "ALLOY WHEELS"],
+      "mileage": 25000,
+      "fuelType": "PETROL",
+      "transmission": "MANUAL",
+      "owner": "1st",
+      "location": "Delhi",
+      "postingDate": "26-AUG-24",
+      "description": "Yamaha FZ-S in good condition with reasonable mileage.",
+      "sellerName": "Arjun Verma",
+      "sellerImage": "/placeholder.svg?height=50&width=50",
+      "images": [
+        "https://imgd.aeplcdn.com/1280x720/n/cw/ec/141961/fzs-fi-v4-right-front-three-quarter-3.png?isig=0",
+        "https://imgd.aeplcdn.com/1280x720/n/cw/ec/141961/fzs-fi-v4-right-front-three-quarter-3.png?isig=0",
+        "https://imgd.aeplcdn.com/1280x720/n/cw/ec/141961/fzs-fi-v4-right-front-three-quarter-3.png?isig=0"
+    ],
+      "overview": {
+        "location": "Delhi",
+        "additionalInfo": [
+          { "label": "Accidental", "value": "No" },
+          { "label": "Battery Condition", "value": "Good" },
+          { "label": "Vehicle Certified", "value": "Yes" },
+          { "label": "Color", "value": "Grey" },
+          { "label": "Engine Capacity", "value": "150cc" },
+          { "label": "Insurance Type", "value": "Comprehensive" },
+          { "label": "Make Month", "value": "April" },
+          { "label": "Registration Place", "value": "DL" },
+          { "label": "Exchange", "value": "Yes" },
+          { "label": "Finance", "value": "No" },
+          { "label": "Service History", "value": "Available" },
+          { "label": "Tyre Condition", "value": "Good" }
+        ]
+      }
+    },
+    {
+      "id": "4",
+      "title": "Hero Splendor Plus",
+      "subtitle": "2016 Model",
+      "price": 55000,
+      "features": ["ELECTRIC START"],
+      "mileage": 30000,
+      "fuelType": "PETROL",
+      "transmission": "MANUAL",
+      "owner": "1st",
+      "location": "Bangalore",
+      "postingDate": "Today",
+      "description": "Hero Splendor Plus in well-maintained condition.",
+      "sellerName": "Priya Sharma",
+      "sellerImage": "/placeholder.svg?height=50&width=50",
+      "images": [
+        "https://www.bikes4sale.in/pictures/default/hero-splendor-plus-bs6/hero-splendor-plus-bs6-pic-22.jpg",
+        "https://www.bikes4sale.in/pictures/default/hero-splendor-plus-bs6/hero-splendor-plus-bs6-pic-22.jpg",
+        "https://www.bikes4sale.in/pictures/default/hero-splendor-plus-bs6/hero-splendor-plus-bs6-pic-22.jpg"
+
+      ],
+      "overview": {
+        "location": "Bangalore",
+        "additionalInfo": [
+          { "label": "Accidental", "value": "No" },
+          { "label": "Battery Condition", "value": "Good" },
+          { "label": "Vehicle Certified", "value": "Yes" },
+          { "label": "Color", "value": "Blue" },
+          { "label": "Engine Capacity", "value": "100cc" },
+          { "label": "Insurance Type", "value": "Comprehensive" },
+          { "label": "Make Month", "value": "March" },
+          { "label": "Registration Place", "value": "KA" },
+          { "label": "Exchange", "value": "Yes" },
+          { "label": "Finance", "value": "No" },
+          { "label": "Service History", "value": "Available" },
+          { "label": "Tyre Condition", "value": "Good" }
+        ]
+      }
+    },
+    {
+      "id": "5",
+      "title": "Bajaj Dominar 400",
+      "subtitle": "2021 Model",
+      "price": 200000,
+      "features": ["LED HEADLAMP", "DUAL CHANNEL ABS"],
+      "mileage": 5000,
+      "fuelType": "PETROL",
+      "transmission": "MANUAL",
+      "owner": "1st",
+      "location": "Chennai",
+      "postingDate": "20-AUG-24",
+      "description": "Bajaj Dominar 400, barely used and in great shape.",
+      "sellerName": "Sanjay Menon",
+      "sellerImage": "/placeholder.svg?height=50&width=50",
+      "images": [
+      "https://imgd.aeplcdn.com/664x374/n/cw/ec/114423/dominar-400-right-front-three-quarter-8.png?isig=0&q=80",
+      "https://imgd.aeplcdn.com/664x374/n/cw/ec/114423/dominar-400-right-front-three-quarter-8.png?isig=0&q=80",
+      "https://imgd.aeplcdn.com/664x374/n/cw/ec/114423/dominar-400-right-front-three-quarter-8.png?isig=0&q=80"
+    ],
+      "overview": {
+        "location": "Chennai",
+        "additionalInfo": [
+          { "label": "Accidental", "value": "No" },
+          { "label": "Battery Condition", "value": "Good" },
+          { "label": "Vehicle Certified", "value": "Yes" },
+          { "label": "Color", "value": "Blue" },
+          { "label": "Engine Capacity", "value": "400cc" },
+          { "label": "Insurance Type", "value": "Comprehensive" },
+          { "label": "Make Month", "value": "August" },
+          { "label": "Registration Place", "value": "TN" },
+          { "label": "Exchange", "value": "Yes" },
+          { "label": "Finance", "value": "Yes" },
+          { "label": "Service History", "value": "Available" },
+          { "label": "Tyre Condition", "value": "Good" }
+        ]
+      }
+    },
+    {
+      "id": "6",
+      "title": "KTM Duke 390",
+      "subtitle": "2020 Model",
+      "price": 180000,
+      "features": ["LED HEADLAMP", "ABS"],
+      "mileage": 3000,
+      "fuelType": "PETROL",
+      "transmission": "MANUAL",
+      "owner": "1st",
+      "location": "Hyderabad",
+      "postingDate": "05-SEP-24",
+      "description": "KTM Duke 390 in excellent condition, barely used.",
+      "sellerName": "Nitin Rao",
+      "sellerImage": "/placeholder.svg?height=50&width=50",
+      "images": [
+      "https://imgd.aeplcdn.com/1280x720/n/cw/ec/148323/390-duke-2024-right-front-three-quarter-3.jpeg?isig=0",
+      "https://imgd.aeplcdn.com/1280x720/n/cw/ec/148323/390-duke-2024-right-front-three-quarter-3.jpeg?isig=0",
+      "https://imgd.aeplcdn.com/1280x720/n/cw/ec/148323/390-duke-2024-right-front-three-quarter-3.jpeg?isig=0"
+    ],
+      "overview": {
+        "location": "Hyderabad",
+        "additionalInfo": [
+          { "label": "Accidental", "value": "No" },
+          { "label": "Battery Condition", "value": "Good" },
+          { "label": "Vehicle Certified", "value": "Yes" },
+          { "label": "Color", "value": "Orange" },
+          { "label": "Engine Capacity", "value": "373cc" },
+          { "label": "Insurance Type", "value": "Comprehensive" },
+          { "label": "Make Month", "value": "March" },
+          { "label": "Registration Place", "value": "TG" },
+          { "label": "Exchange", "value": "Yes" },
+          { "label": "Finance", "value": "Yes" },
+          { "label": "Service History", "value": "Available" },
+          { "label": "Tyre Condition", "value": "Good" }
+        ]
+      }
+    }
+  ]
+  

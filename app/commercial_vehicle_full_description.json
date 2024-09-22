@@ -1,0 +1,210 @@
+[
+    {
+      "id": "1",
+      "title": "Tata Ace (2019 Model)",
+      "subtitle": "[2019] Diesel",
+      "price": 550000,
+      "features": ["FEATURED", "VERIFIED SELLER"],
+      "capacity": "1 Ton",
+      "mileage": "18 km/l",
+      "condition": "Like New",
+      "owner": "1st",
+      "location": "Bandra, Mumbai",
+      "postingDate": "09-SEP-24",
+      "description": "Tata Ace in excellent condition, low mileage, used for personal goods transport.",
+      "sellerName": "Anil Sharma",
+      "sellerImage": "/placeholder.svg?height=50&width=50",
+      "images": [
+        "https://www.motorindiaonline.in/wp-content/uploads/2019/03/Pic-2_Tata-Ace-Gold.jpg",
+        "https://cdni.autocarindia.com/Utils/ImageResizer.ashx?n=http://img.haymarketsac.in/autocarpro/IMG/571/68571/image-02.jpg",
+        "https://5.imimg.com/data5/SELLER/Default/2024/1/375565200/ET/JV/TE/182644090/titanium-wh-tata-ace-gold-diesel-bs6-phase-2.jpg"
+      ],
+      "overview": {
+        "location": "Bandra, Mumbai",
+        "additionalInfo": [
+          { "label": "Accidental Damage", "value": "No" },
+          { "label": "Service History", "value": "Available" },
+          { "label": "Color", "value": "White" },
+          { "label": "Fuel Type", "value": "Diesel" },
+          { "label": "Make Month", "value": "June" },
+          { "label": "Exchange", "value": "Yes" },
+          { "label": "Finance", "value": "Yes" },
+          { "label": "Insurance", "value": "Valid" }
+        ]
+      }
+    },
+    {
+      "id": "2",
+      "title": "Mahindra Bolero Pik-Up (2020 Model)",
+      "subtitle": "[2020] Diesel",
+      "price": 700000,
+      "features": ["VERIFIED SELLER"],
+      "capacity": "1.5 Ton",
+      "mileage": "15 km/l",
+      "condition": "Good",
+      "owner": "1st",
+      "location": "Andheri, Mumbai",
+      "postingDate": "08-SEP-24",
+      "description": "Mahindra Bolero Pik-Up in good condition, suitable for heavy loads and transportation.",
+      "sellerName": "Suresh Reddy",
+      "sellerImage": "/placeholder.svg?height=50&width=50",
+      "images": [
+        "https://truckcdn.cardekho.com/in/mahindra/bolero-pikup/mahindra-bolero-pikup-71203.jpg",
+        "https://res.cloudinary.com/dnreeobav/image/fetch/c_scale,q_30,w_350,f_auto/l_text:Arial_20_bold:TrucksBuses.com,x_70,y_100,co_rgb:ffffff/https://www.trucksbuses.com/uploads/445_d9976f86ad674f1eb3e169d76254683cmahindra-bolero-pickup-2.jpg",
+        "https://assets.tractorjunction.com/truck-junction/assets/images/truck/mahindra-boleropickupextralong-right-2.webp?format=webp"
+      ],
+      "overview": {
+        "location": "Andheri, Mumbai",
+        "additionalInfo": [
+          { "label": "Accidental Damage", "value": "No" },
+          { "label": "Service History", "value": "Available" },
+          { "label": "Color", "value": "Yellow" },
+          { "label": "Fuel Type", "value": "Diesel" },
+          { "label": "Make Month", "value": "April" },
+          { "label": "Exchange", "value": "No" },
+          { "label": "Finance", "value": "Yes" },
+          { "label": "Insurance", "value": "Valid" }
+        ]
+      }
+    },
+    {
+      "id": "3",
+      "title": "Isuzu D-Max (2022 Model)",
+      "subtitle": "[2022] Diesel",
+      "price": 850000,
+      "features": ["FEATURED"],
+      "capacity": "1 Ton",
+      "mileage": "16 km/l",
+      "condition": "Like New",
+      "owner": "1st",
+      "location": "Ghatkopar, Mumbai",
+      "postingDate": "07-SEP-24",
+      "description": "Isuzu D-Max with low mileage, ideal for commercial use and personal transport.",
+      "sellerName": "Rajiv Agarwal",
+      "sellerImage": "/placeholder.svg?height=50&width=50",
+      "images": [
+        "https://media.zigcdn.com/media/model/2022/Nov/front-1-4-left-1955160109_930x620.jpg",
+        "https://stimg.cardekho.com/images/carexteriorimages/630x420/Isuzu/D-Max/9422/1667896979680/headlight-43.jpg?imwidth=420&impolicy=resize",
+        "https://www.isuzu.co.uk/media/4zeg52oi/utility-single-cab-splash-white-farm-bed-load-415x485.jpg"
+      ],
+      "overview": {
+        "location": "Ghatkopar, Mumbai",
+        "additionalInfo": [
+          { "label": "Accidental Damage", "value": "No" },
+          { "label": "Service History", "value": "Available" },
+          { "label": "Color", "value": "Blue" },
+          { "label": "Fuel Type", "value": "Diesel" },
+          { "label": "Make Month", "value": "January" },
+          { "label": "Exchange", "value": "Yes" },
+          { "label": "Finance", "value": "Yes" },
+          { "label": "Insurance", "value": "Valid" }
+        ]
+      }
+    },
+    {
+      "id": "4",
+      "title": "Ashok Leyland Dost (2021 Model)",
+      "subtitle": "[2021] Diesel",
+      "price": 600000,
+      "features": ["VERIFIED SELLER"],
+      "capacity": "1.25 Ton",
+      "mileage": "17 km/l",
+      "condition": "Good",
+      "owner": "1st",
+      "location": "Malad, Mumbai",
+      "postingDate": "06-SEP-24",
+      "description": "Ashok Leyland Dost, well maintained and great for transporting goods.",
+      "sellerName": "Sunil Jain",
+      "sellerImage": "/placeholder.svg?height=50&width=50",
+      "images": [
+        "https://sabooautozone.com/static/media/dost-plus-image-1.9ff2c8ab2b298e90a6a0.webp",
+        "https://assets.tractorjunction.com/truck-junction/assets/images/truck/ashokleyland-dost-other1.webp?format=webp",
+        "https://images.jdmagicbox.com/quickquotes/images_main/mini-truck-ashok-leyland-dost-lite-diesel-80kmph-2182451623-g4lc80k1.jpg"
+      ],
+      "overview": {
+        "location": "Malad, Mumbai",
+        "additionalInfo": [
+          { "label": "Accidental Damage", "value": "No" },
+          { "label": "Service History", "value": "Available" },
+          { "label": "Color", "value": "White" },
+          { "label": "Fuel Type", "value": "Diesel" },
+          { "label": "Make Month", "value": "March" },
+          { "label": "Exchange", "value": "No" },
+          { "label": "Finance", "value": "Yes" },
+          { "label": "Insurance", "value": "Valid" }
+        ]
+      }
+    },
+    {
+      "id": "5",
+      "title": "Mahindra Thar (2021 Model)",
+      "subtitle": "[2021] Diesel",
+      "price": 950000,
+      "features": ["FEATURED"],
+      "capacity": "1 Ton",
+      "mileage": "15 km/l",
+      "condition": "Like New",
+      "owner": "1st",
+      "location": "Vile Parle, Mumbai",
+      "postingDate": "05-SEP-24",
+      "description": "Mahindra Thar in pristine condition, ideal for commercial or personal use.",
+      "sellerName": "Pankaj Desai",
+      "sellerImage": "/placeholder.svg?height=50&width=50",
+      "images": [
+        "https://www.motorbeam.com/wp-content/uploads/2021-Mahindra-Thar-Hard-Top-1200x900.jpg",
+        "https://imgd-ct.aeplcdn.com/1056x660/n/cw/ec/40087/thar-interior-steering-wheel.jpeg?q=80",
+        "https://gaadiwaadi.com/wp-content/uploads/2021/03/Mahindra-Thar-Bimbra-4x4-custom-interior-2-1080x720.jpg"
+      ],
+      "overview": {
+        "location": "Vile Parle, Mumbai",
+        "additionalInfo": [
+          { "label": "Accidental Damage", "value": "No" },
+          { "label": "Service History", "value": "Available" },
+          { "label": "Color", "value": "Red" },
+          { "label": "Fuel Type", "value": "Diesel" },
+          { "label": "Make Month", "value": "August" },
+          { "label": "Exchange", "value": "Yes" },
+          { "label": "Finance", "value": "Yes" },
+          { "label": "Insurance", "value": "Valid" }
+        ]
+      }
+    },
+    {
+      "id": "6",
+      "title": "Force Traveller (2022 Model)",
+      "subtitle": "[2022] Diesel",
+      "price": 1300000,
+      "year": "2022",
+      "engine":"",
+      "loadCapacity":"555kg",
+      "features": ["VERIFIED SELLER"],
+      "capacity": "2 Ton",
+      "mileage": "14 km/l",
+      "condition": "Good",
+      "owner": "1st",
+      "location": "Dadar, Mumbai",
+      "postingDate": "04-SEP-24",
+      "description": "Force Traveller with ample space for passengers, ideal for commercial travel.",
+      "sellerName": "Ravi Kumar",
+      "sellerImage": "/placeholder.svg?height=50&width=50",
+      "images": [
+        "https://assets.tractorjunction.com/truck-junction/assets/images/truck/traveller-26-1660819967.webp",
+        "https://img.indianautosblog.com/2012/10/Force-Traveller-26-launch-5.jpg",
+        "https://www.forcetrucks.com/img/traveller-3.jpg"
+      ],
+      "overview": {
+        "location": "Dadar, Mumbai",
+        "additionalInfo": [
+          { "label": "Accidental Damage", "value": "No" },
+          { "label": "Service History", "value": "Available" },
+          { "label": "Color", "value": "White" },
+          { "label": "Fuel Type", "value": "Diesel" },
+          { "label": "Make Month", "value": "July" },
+          { "label": "Exchange", "value": "No" },
+          { "label": "Finance", "value": "Yes" },
+          { "label": "Insurance", "value": "Valid" }
+        ]
+      }
+    }
+  ]
+  

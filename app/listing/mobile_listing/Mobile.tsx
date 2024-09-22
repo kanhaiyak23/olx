@@ -1,6 +1,5 @@
 "use client";
 
-import { Heart } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import Link from "next/link";
 import {
@@ -132,14 +131,14 @@ const sampleListings: MobilePhoneListing[] = [
 
 function MobilePhoneListings({
   listings = sampleListings,
-  searchTerm = "mobile phone",
+  searchTerm = "Mobile phone",
   totalAds = 5234,
 }: MobilePhoneListingsProps) {
   return (
     <div className="container mx-auto p-4">
       <div className="flex justify-between items-center mb-4">
         <h1 className="text-2xl font-bold">
-          Showing results for {searchTerm}
+           {searchTerm}
         </h1>
         <Badge variant="secondary" className="text-lg">
           {totalAds} Ads
@@ -160,7 +159,7 @@ function MobilePhoneListings({
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         {listings.length > 0 ? (
           listings.map((phone) => (
-            <Link key={phone.id}href={'/coming_soon'}>
+            <Link key={phone.id}href={`/mobiles/${phone.id}`}>
             <Card key={phone.id} className="overflow-hidden">
               <CardHeader className="p-0 relative">
                 <img
@@ -168,9 +167,7 @@ function MobilePhoneListings({
                   alt={`${phone.brand} ${phone.model}`}
                   className="w-full h-48 object-cover"
                 />
-                <button className="absolute top-2 right-2 p-1 bg-white rounded-full">
-                  <Heart className="h-6 w-6 text-gray-500" />
-                </button>
+                
                 {phone.isFeatured && (
                   <Badge className="absolute top-2 left-2" variant="secondary">
                     FEATURED

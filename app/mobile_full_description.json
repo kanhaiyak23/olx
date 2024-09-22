@@ -1,0 +1,214 @@
+[
+    {
+      "id": "1",
+      "title": "Apple iPhone 13 (128GB)",
+      "subtitle": "[2021] Midnight",
+      "price": 79999,
+      "features": ["FEATURED", "VERIFIED SELLER"],
+      "storage": "128GB",
+      "ram": "4GB",
+      "battery": "3095mAh",
+      "condition": "Like New",
+      "owner": "1st",
+      "location": "Juhu, Mumbai",
+      "postingDate": "09-SEP-24",
+      "description": "Apple iPhone 13 in excellent condition, fully functional with original box and accessories.",
+      "sellerName": "Neha Gupta",
+      "sellerImage": "/placeholder.svg?height=50&width=50",
+      "images": [
+        "https://m.media-amazon.com/images/I/61VuVU94RnL._AC_UF1000,1000_QL80_.jpg",
+        "https://www.reliancedigital.in/medias/iPhone-13-Green-PDP-Image-492849504-i-2-1200Wx1200H?context=bWFzdGVyfGltYWdlc3wyMTUyODl8aW1hZ2UvanBlZ3xpbWFnZXMvaDA1L2gzZS8xMDAxNjEwOTEwMTA4Ni5qcGd8NTQ3ZWY4MzQ5MDlkZGVkYTExZWVkY2I5NDBlMmJhMDgwMDlmZTA1NzE4MDFkNDM3MzkwOTMwN2Q1MDY4NTk2YQ",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUuyO1gCHVnfXlT0PJX8L1VP_vjfGEEWa9jRGSPauIfoogOYpu2f2BrULbT4qHzdzUYmw&usqp=CAU"
+      ],
+      "overview": {
+        "location": "Juhu, Mumbai",
+        "additionalInfo": [
+          { "label": "Accidental Damage", "value": "No" },
+          { "label": "Warranty", "value": "Available" },
+          { "label": "Color", "value": "Midnight" },
+          { "label": "SIM Type", "value": "Dual SIM" },
+          { "label": "Make Month", "value": "September" },
+          { "label": "Exchange", "value": "Yes" },
+          { "label": "Finance", "value": "Yes" },
+          { "label": "Accessories Included", "value": "Yes" }
+        ]
+      }
+    },
+    {
+      "id": "2",
+      "title": "Samsung Galaxy S21 (256GB)",
+      "subtitle": "[2021] Phantom Gray",
+      "price": 64999,
+      "features": ["VERIFIED SELLER"],
+      "storage": "256GB",
+      "ram": "8GB",
+      "battery": "4000mAh",
+      "condition": "Good",
+      "owner": "1st",
+      "location": "Andheri, Mumbai",
+      "postingDate": "08-SEP-24",
+      "description": "Samsung Galaxy S21 with no scratches and fully functional. Comes with original charger.",
+      "sellerName": "Rajesh Kumar",
+      "sellerImage": "/placeholder.svg?height=50&width=50",
+      "images": [
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS13Cme1rejgCeMRUg4Y6VfSeJSL_lmc5kKiQ&s",
+        "https://m.media-amazon.com/images/I/71+bm7u4v+L._AC_UF1000,1000_QL80_.jpg",
+        "https://m.media-amazon.com/images/I/51MfJSwMkZS._AC_.jpg"
+      ],
+      "overview": {
+        "location": "Andheri, Mumbai",
+        "additionalInfo": [
+          { "label": "Accidental Damage", "value": "No" },
+          { "label": "Warranty", "value": "Available" },
+          { "label": "Color", "value": "Phantom Gray" },
+          { "label": "SIM Type", "value": "Dual SIM" },
+          { "label": "Make Month", "value": "January" },
+          { "label": "Exchange", "value": "No" },
+          { "label": "Finance", "value": "No" },
+          { "label": "Accessories Included", "value": "Yes" }
+        ]
+      }
+    },
+    {
+      "id": "3",
+      "title": "OnePlus 9 (128GB)",
+      "subtitle": "[2021] Winter Mist",
+      "price": 42999,
+      "features": ["FEATURED"],
+      "storage": "128GB",
+      "ram": "8GB",
+      "battery": "4500mAh",
+      "condition": "Like New",
+      "owner": "1st",
+      "location": "Versova, Mumbai",
+      "postingDate": "07-SEP-24",
+      "description": "OnePlus 9 in pristine condition, comes with all accessories and original box.",
+      "sellerName": "Siddharth Rao",
+      "sellerImage": "/placeholder.svg?height=50&width=50",
+      "images": [
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9pP_YUmQTSrV_Kf076OBRYOKiAFaONzRM8g&s",
+        "https://www.whatmobile.com.pk/admin/images/OnePlus/OnePlus9-b.jpg",
+        "https://m.media-amazon.com/images/I/51sr+MNAq7S._AC_UF1000,1000_QL80_.jpg"
+      ],
+      "overview": {
+        "location": "Versova, Mumbai",
+        "additionalInfo": [
+          { "label": "Accidental Damage", "value": "No" },
+          { "label": "Warranty", "value": "Available" },
+          { "label": "Color", "value": "Winter Mist" },
+          { "label": "SIM Type", "value": "Dual SIM" },
+          { "label": "Make Month", "value": "March" },
+          { "label": "Exchange", "value": "Yes" },
+          { "label": "Finance", "value": "Yes" },
+          { "label": "Accessories Included", "value": "Yes" }
+        ]
+      }
+    },
+    {
+      "id": "4",
+      "title": "Xiaomi Mi 11 (256GB)",
+      "subtitle": "[2021] Horizon Blue",
+      "price": 49999,
+      "features": ["VERIFIED SELLER"],
+      "storage": "256GB",
+      "ram": "8GB",
+      "battery": "4600mAh",
+      "condition": "Good",
+      "owner": "1st",
+      "location": "Bandra, Mumbai",
+      "postingDate": "06-SEP-24",
+      "description": "Xiaomi Mi 11 in great condition, fully functional with charger and box.",
+      "sellerName": "Anjali Mehta",
+      "sellerImage": "/placeholder.svg?height=50&width=50",
+      "images": [
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS12UfMvfu5SY5cgLPtOlzd4nYVUrN6ZEGVjA&s",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsKFAJJwcAjkZ_hTdDj9lJesnLeHj1o5m7PNU8tMY1qyRKwxNFDKfRBGz0LKCXra3Se70&usqp=CAU",
+        "https://i01.appmifile.com/webfile/globalimg/products/m/mi-11/specs-header.png"
+      ],
+      "overview": {
+        "location": "Bandra, Mumbai",
+        "additionalInfo": [
+          { "label": "Accidental Damage", "value": "No" },
+          { "label": "Warranty", "value": "Available" },
+          { "label": "Color", "value": "Horizon Blue" },
+          { "label": "SIM Type", "value": "Dual SIM" },
+          { "label": "Make Month", "value": "April" },
+          { "label": "Exchange", "value": "No" },
+          { "label": "Finance", "value": "No" },
+          { "label": "Accessories Included", "value": "Yes" }
+        ]
+      }
+    },
+    {
+      "id": "5",
+      "title": "Realme GT (256GB)",
+      "subtitle": "[2021] Dashing Blue",
+      "price": 35999,
+      "features": ["FEATURED"],
+      "storage": "256GB",
+      "ram": "12GB",
+      "battery": "4500mAh",
+      "condition": "Like New",
+      "owner": "1st",
+      "location": "Ghatkopar, Mumbai",
+      "postingDate": "05-SEP-24",
+      "description": "Realme GT in mint condition, original accessories included.",
+      "sellerName": "Kriti Singh",
+      "sellerImage": "/placeholder.svg?height=50&width=50",
+      "images": [
+        "https://rukminim2.flixcart.com/image/850/1000/l3rmzrk0/mobile/q/w/4/-original-imagetmesf2x8gp2.jpeg?q=90&crop=false",
+        "https://images.hindustantimes.com/tech/htmobile4/P36424/images/Design/146476-v1-realme-gt-5g-256gb-mobile-phone-large-2.jpg",
+        "https://akm-img-a-in.tosshub.com/indiatoday/images/story/202102/Realme_GT_5G_1200x768.jpeg?size=690:388"
+      ],
+      "overview": {
+        "location": "Ghatkopar, Mumbai",
+        "additionalInfo": [
+          { "label": "Accidental Damage", "value": "No" },
+          { "label": "Warranty", "value": "Available" },
+          { "label": "Color", "value": "Dashing Blue" },
+          { "label": "SIM Type", "value": "Dual SIM" },
+          { "label": "Make Month", "value": "June" },
+          { "label": "Exchange", "value": "Yes" },
+          { "label": "Finance", "value": "Yes" },
+          { "label": "Accessories Included", "value": "Yes" }
+        ]
+      }
+    },
+    {
+      "id": "6",
+      "title": "Vivo V21e (128GB)",
+      "subtitle": "[2021] Diamond Glow",
+      "price": 26999,
+      "features": ["VERIFIED SELLER"],
+      "storage": "128GB",
+      "camera":"108mp",
+      "ram": "8GB",
+      "battery": "4000mAh",
+      "condition": "Good",
+      "owner": "1st",
+      "location": "Malad, Mumbai",
+      "postingDate": "04-SEP-24",
+      "description": "Vivo V21e in good condition, includes original charger and box.",
+      "sellerName": "Amit Sharma",
+      "sellerImage": "/placeholder.svg?height=50&width=50",
+      "images": [
+        "https://exstatic-in.vivo.com/Yg9VjLb5Z7ptsvQD/1653025771940/d8a9b2925b13e9f965cf9e02f1c37a4a.png",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKKLdn6lce_qkL92K_zNew684t8ACJz05I3wtjCNlQDnSnuPLMsVnogqOa58u7JY5qOHU&usqp=CAU",
+        "https://techgiants.pk/wp-content/uploads/2021/07/6.png"
+      ],
+      "overview": {
+        "location": "Malad, Mumbai",
+        "additionalInfo": [
+          { "label": "Accidental Damage", "value": "No" },
+          { "label": "Warranty", "value": "Available" },
+          { "label": "Color", "value": "Diamond Glow" },
+          { "label": "SIM Type", "value": "Dual SIM" },
+          { "label": "Make Month", "value": "May" },
+          { "label": "Exchange", "value": "No" },
+          { "label": "Finance", "value": "No" },
+          { "label": "Accessories Included", "value": "Yes" }
+        ]
+      }
+    }
+  ]
+  

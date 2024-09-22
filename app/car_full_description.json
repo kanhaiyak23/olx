@@ -14,10 +14,12 @@
       "description": "Excellent condition single owner Honda city V petrol automatic top model car...",
       "sellerName": "Jay Patel",
       "sellerImage": "/placeholder.svg?height=50&width=50",
+      "coordinates":{ "lat": 19.0760, "lng": 72.8777 },
       "images": [
         "https://stimg.cardekho.com/images/carexteriorimages/930x620/Honda/City/9710/1677914238296/front-left-side-47.jpg",
-        "https://www.hondacarindia.com/_next/image?url=https%3A%2F%2Fwww.hondacarindia.com%2Fweb-data%2Fmodels-mobile%2F2023%2Fcity5thGen%2FDesign%2FExterior%2FNew-Front-Design.jpg&w=3840&q=75",
-        "https://www.v3cars.com/media/content/835677honda-city-facelift-front-exterior.webp"
+        "https://imgd.aeplcdn.com/1920x1080/n/cw/ec/134287/city-exterior-left-rear-three-quarter.jpeg?isig=0&q=80&q=80",
+        "https://imgd.aeplcdn.com/1920x1080/n/cw/ec/134287/city-exterior-rear-view.jpeg?isig=0&q=80&q=80"
+       
       ],
       "overview": {
         "location": "Opera House, Charni road, Mumbai",
@@ -53,9 +55,11 @@
       "sellerName": "Rohan Mehta",
       "sellerImage": "/placeholder.svg?height=50&width=50",
       "images": [
-        "https://stimg.cardekho.com/images/carexteriorimages/930x620/Maruti/Swift/7389/1677914238296/front-left-side-47.jpg",
-        "https://www.marutisuzuki.com/images/swift/2021/model.jpg",
-        "https://www.v3cars.com/media/content/838377maruti-swift-facelift-front-exterior.webp"
+        "https://imgd.aeplcdn.com/1280x720/n/cw/ec/51502/honda-city-4th-generation-left-front-three-quarter3.jpeg",
+        "https://imgd.aeplcdn.com/1280x720/n/cw/ec/51502/honda-city-4th-generation-left-front-three-quarter3.jpeg",
+        "https://imgd.aeplcdn.com/1280x720/n/cw/ec/51502/honda-city-4th-generation-left-front-three-quarter3.jpeg"
+
+        
       ],
       "overview": {
         "location": "Lokhandwala, Andheri West, Mumbai",
@@ -91,9 +95,9 @@
       "sellerName": "Ananya Verma",
       "sellerImage": "/placeholder.svg?height=50&width=50",
       "images": [
-        "https://stimg.cardekho.com/images/carexteriorimages/930x620/Hyundai/Creta/2020/1677914238296/front-left-side-47.jpg",
-        "https://www.hyundai.com/images/creta/exterior.jpg",
-        "https://www.v3cars.com/media/content/839477hyundai-creta-front-exterior.webp"
+        "https://imgd.aeplcdn.com/664x374/n/cw/ec/41564/hyundai-creta-right-front-three-quarter9.jpeg?q=80",
+        "https://imgd.aeplcdn.com/664x374/n/cw/ec/41564/hyundai-creta-right-front-three-quarter9.jpeg?q=80",
+        "https://imgd.aeplcdn.com/664x374/n/cw/ec/41564/hyundai-creta-right-front-three-quarter9.jpeg?q=80"
       ],
       "overview": {
         "location": "Juhu Tara Road, Mumbai",
@@ -129,9 +133,10 @@
       "sellerName": "Neha Sharma",
       "sellerImage": "/placeholder.svg?height=50&width=50",
       "images": [
-        "https://stimg.cardekho.com/images/carexteriorimages/930x620/Toyota/Fortuner/2017/1677914238296/front-left-side-47.jpg",
-        "https://www.toyota.com/images/fortuner/exterior.jpg",
-        "https://www.v3cars.com/media/content/840577toyota-fortuner-front-exterior.webp"
+        "https://imgd.aeplcdn.com/1280x720/n/cw/ec/150603/i20-exterior-right-front-three-quarter-7.jpeg?isig=0&q=80",
+        "https://imgd.aeplcdn.com/1280x720/n/cw/ec/150603/i20-exterior-right-front-three-quarter-7.jpeg?isig=0&q=80",
+        "https://imgd.aeplcdn.com/1280x720/n/cw/ec/150603/i20-exterior-right-front-three-quarter-7.jpeg?isig=0&q=80"
+        
       ],
       "overview": {
         "location": "Pali Hill, Bandra, Mumbai",
@@ -167,9 +172,13 @@
       "sellerName": "Amit Desai",
       "sellerImage": "/placeholder.svg?height=50&width=50",
       "images": [
-        "https://stimg.cardekho.com/images/carexteriorimages/930x620/Mahindra/Thar/2021/1677914238296/front-left-side-47.jpg",
-        "https://www.mahindra.com/images/thar/exterior.jpg",
-        "https://www.v3cars.com/media/content/841677mahindra-thar-front-exterior.webp"
+        
+        "https://mediapool.bmwgroup.com/cache/P9/202309/P90522951/P90522951-the-bmw-i5-edrive40-driving-10-2023-2247px.jpg",
+        "https://mediapool.bmwgroup.com/cache/P9/202309/P90522951/P90522951-the-bmw-i5-edrive40-driving-10-2023-2247px.jpg",
+        "https://mediapool.bmwgroup.com/cache/P9/202309/P90522951/P90522951-the-bmw-i5-edrive40-driving-10-2023-2247px.jpg"
+
+
+        
       ],
       "overview": {
         "location": "Shivaji Park, Dadar, Mumbai",
@@ -205,9 +214,10 @@
       "sellerName": "Pooja Soni",
       "sellerImage": "/placeholder.svg?height=50&width=50",
       "images": [
-        "https://stimg.cardekho.com/images/carexteriorimages/930x620/Kia/Seltos/2020/1677914238296/front-left-side-47.jpg",
-        "https://www.kia.com/images/seltos/exterior.jpg",
-        "https://www.v3cars.com/media/content/842677kia-seltos-front-exterior.webp"
+        "https://stimg.cardekho.com/images/carexteriorimages/630x420/Tata/Curvv/9578/1723033064164/front-left-side-47.jpg",
+        "https://stimg.cardekho.com/images/carexteriorimages/630x420/Tata/Curvv/9578/1723033064164/front-left-side-47.jpg",
+        "https://stimg.cardekho.com/images/carexteriorimages/630x420/Tata/Curvv/9578/1723033064164/front-left-side-47.jpg"
+      
       ],
       "overview": {
         "location": "Goregaon East, Mumbai",

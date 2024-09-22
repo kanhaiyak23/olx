@@ -1,6 +1,6 @@
 import Header from './header/page'
 import Footer from './footer/page'
-
+import ShowListings from './show_sell_data/page';
 export default function Home() {
   return (
     <main>
@@ -8,7 +8,7 @@ export default function Home() {
 
         
 
-        
+        <ShowListings/>
 
         <Footer/>
 

@@ -1,0 +1,233 @@
+[
+    {
+      "id": "1",
+      "title": "Honda Activa 6G (2022)",
+      "subtitle": "[2020-2022] Standard",
+      "price": 65000,
+      "features": ["FEATURED", "VERIFIED SELLER"],
+      "fuelType": "PETROL",
+      "mileage": 15000,
+      "transmission": "AUTOMATIC",
+      "owner": "1st",
+      "location": "Malad, Mumbai",
+      "postingDate": "09-SEP-24",
+      "description": "Honda Activa 6G in excellent condition. Single owner with full service history.",
+      "sellerName": "Aditi Desai",
+      "sellerImage": "/placeholder.svg?height=50&width=50",
+      "images": [
+        "https://images.news18.com/ibnlive/uploads/2022/04/honda-activa-6g.jpg",
+        "https://5.imimg.com/data5/SELLER/Default/2022/5/DE/KK/FM/68853065/honda-activa-6g-scooter-500x500.png",
+        "https://5.imimg.com/data5/SELLER/Default/2023/5/304795781/HD/PI/JD/27872283/honda-activa-6g-scooter.jpg"
+      ],
+      "overview": {
+        "location": "Malad West, Mumbai",
+        "additionalInfo": [
+          { "label": "Accidental", "value": "No" },
+          { "label": "Battery Condition", "value": "New" },
+          { "label": "Vehicle Certified", "value": "Yes" },
+          { "label": "Color", "value": "Black" },
+          { "label": "Engine Capacity", "value": "110cc" },
+          { "label": "Insurance Type", "value": "Comprehensive" },
+          { "label": "Make Month", "value": "April" },
+          { "label": "Registration Place", "value": "MH" },
+          { "label": "Exchange", "value": "Yes" },
+          { "label": "Finance", "value": "Yes" },
+          { "label": "Service History", "value": "Available" },
+          { "label": "Tyre Condition", "value": "New" }
+        ]
+      }
+    },
+    {
+      "id": "2",
+      "title": "TVS Ntorq 125 (2021)",
+      "subtitle": "[2020-2022] Race Edition",
+      "price": 75000,
+      "features": ["VERIFIED SELLER"],
+      "fuelType": "PETROL",
+      "mileage": 10000,
+      "transmission": "AUTOMATIC",
+      "owner": "1st",
+      "location": "Borivali East, Mumbai",
+      "postingDate": "08-SEP-24",
+      "description": "TVS Ntorq 125 Race Edition in superb condition. Full service record available.",
+      "sellerName": "Rahul Bansal",
+      "sellerImage": "/placeholder.svg?height=50&width=50",
+      "images": [
+        "https://imgd.aeplcdn.com/1280x720/n/cw/ec/49444/ntorq-125-right-side-view.jpeg?isig=0",
+        "https://www.carandbike.com/_next/image?url=https%3A%2F%2Fimages.carandbike.com%2Fbike-images%2Fcolors%2Ftvs%2Fntorq-125%2Ftvs-ntorq-125-metallic-red.png%3Fv%3D1597059576&w=640&q=75",
+        "https://www.team-bhp.com/forum/attachments/motorbikes/2175749d1625581194-tvs-ntorq-125-race-edition-launched-rs-62-995-20210706_194917.jpg"
+      ],
+      "overview": {
+        "location": "Borivali East, Mumbai",
+        "additionalInfo": [
+          { "label": "Accidental", "value": "No" },
+          { "label": "Battery Condition", "value": "Good" },
+          { "label": "Vehicle Certified", "value": "Yes" },
+          { "label": "Color", "value": "Green" },
+          { "label": "Engine Capacity", "value": "125cc" },
+          { "label": "Insurance Type", "value": "Comprehensive" },
+          { "label": "Make Month", "value": "June" },
+          { "label": "Registration Place", "value": "MH" },
+          { "label": "Exchange", "value": "No" },
+          { "label": "Finance", "value": "No" },
+          { "label": "Service History", "value": "Available" },
+          { "label": "Tyre Condition", "value": "Good" }
+        ]
+      }
+    },
+    {
+      "id": "3",
+      "title": "Bajaj Chetak (2020)",
+      "subtitle": "[2020-2022] Premium",
+      "price": 95000,
+      "features": ["FEATURED"],
+      "fuelType": "ELECTRIC",
+      "mileage": 5000,
+      "transmission": "AUTOMATIC",
+      "owner": "1st",
+      "location": "Andheri West, Mumbai",
+      "postingDate": "07-SEP-24",
+      "description": "Bajaj Chetak electric scooter in excellent condition. Very low mileage.",
+      "sellerName": "Sanjay Joshi",
+      "sellerImage": "/placeholder.svg?height=50&width=50",
+      "images": [
+        "https://imgd.aeplcdn.com/1280x720/n/cw/ec/169773/chetak-left-side-view.jpeg?isig=0",
+        "https://imgd.aeplcdn.com/1280x720/n/cw/ec/50277/chetak-right-front-three-quarter-14.jpeg?isig=0",
+        "https://etimg.etb2bimg.com/thumb/msid-101470609,width-1200,height-900,resizemode-4/.jpg"
+      ],
+      "overview": {
+        "location": "Andheri West, Mumbai",
+        "additionalInfo": [
+          { "label": "Accidental", "value": "No" },
+          { "label": "Battery Condition", "value": "New" },
+          { "label": "Vehicle Certified", "value": "Yes" },
+          { "label": "Color", "value": "Blue" },
+          { "label": "Engine Capacity", "value": "Electric" },
+          { "label": "Insurance Type", "value": "Comprehensive" },
+          { "label": "Make Month", "value": "November" },
+          { "label": "Registration Place", "value": "MH" },
+          { "label": "Exchange", "value": "Yes" },
+          { "label": "Finance", "value": "Yes" },
+          { "label": "Service History", "value": "Available" },
+          { "label": "Tyre Condition", "value": "New" }
+        ]
+      }
+    },
+    {
+      "id": "4",
+      "title": "Hero Maestro Edge (2021)",
+      "subtitle": "[2020-2022] LX",
+      "price": 55000,
+      "features": ["VERIFIED SELLER"],
+      "fuelType": "PETROL",
+      "mileage": 12000,
+      "transmission": "AUTOMATIC",
+      "owner": "1st",
+      "location": "Dadar, Mumbai",
+      "postingDate": "06-SEP-24",
+      "description": "Hero Maestro Edge in very good condition. One owner with full service history.",
+      "sellerName": "Karan Sharma",
+      "sellerImage": "/placeholder.svg?height=50&width=50",
+      "images": [
+        "https://www.team-bhp.com/sites/default/files/styles/check_extra_large_for_review/public/New%20Maestro%20Edge%20125%20Front.jpg",
+        "https://cdni.autocarindia.com/Utils/ImageResizer.ashx?n=https://cdni.autocarindia.com/ExtraImages/20210722063648_hero1.jpg&w=700&c=1",
+        "https://www.team-bhp.com/sites/default/files/styles/check_extra_large_for_review/public/New%20Maestro%20Edge%20125%20Side.jpg"
+      ],
+      "overview": {
+        "location": "Dadar East, Mumbai",
+        "additionalInfo": [
+          { "label": "Accidental", "value": "No" },
+          { "label": "Battery Condition", "value": "Good" },
+          { "label": "Vehicle Certified", "value": "Yes" },
+          { "label": "Color", "value": "White" },
+          { "label": "Engine Capacity", "value": "110cc" },
+          { "label": "Insurance Type", "value": "Comprehensive" },
+          { "label": "Make Month", "value": "February" },
+          { "label": "Registration Place", "value": "MH" },
+          { "label": "Exchange", "value": "No" },
+          { "label": "Finance", "value": "No" },
+          { "label": "Service History", "value": "Available" },
+          { "label": "Tyre Condition", "value": "Good" }
+        ]
+      }
+    },
+    {
+      "id": "5",
+      "title": "Suzuki Access 125 (2022)",
+      "subtitle": "[2020-2022] Special Edition",
+      "price": 70000,
+      "features": ["FEATURED", "VERIFIED SELLER"],
+      "fuelType": "PETROL",
+      "mileage": 8000,
+      "transmission": "AUTOMATIC",
+      "owner": "1st",
+      "location": "Santacruz, Mumbai",
+      "postingDate": "05-SEP-24",
+      "description": "Suzuki Access 125 in pristine condition. Well-maintained with low mileage.",
+      "sellerName": "Pooja Mehta",
+      "sellerImage": "/placeholder.svg?height=50&width=50",
+      "images": [
+        "https://www.drivespark.com/bikes-photos/modelsoverview/450x400/476/suzuki-access-125-review-engine-and-performance.jpg/3/",
+        "https://bd.gaadicdn.com/processedimages/suzuki/suzuki-access/source/access-125-cc_blue.jpg?imwidth=480&impolicy=resize",
+        "https://assets.otocapital.in/prod/metallic-dark-greenish-blue-suzuki-access125-front-view.png"
+      ],
+      "overview": {
+        "location": "Santacruz, Mumbai",
+        "additionalInfo": [
+          { "label": "Accidental", "value": "No" },
+          { "label": "Battery Condition", "value": "New" },
+          { "label": "Vehicle Certified", "value": "Yes" },
+          { "label": "Color", "value": "Red" },
+          { "label": "Engine Capacity", "value": "125cc" },
+          { "label": "Insurance Type", "value": "Comprehensive" },
+          { "label": "Make Month", "value": "January" },
+          { "label": "Registration Place", "value": "MH" },
+          { "label": "Exchange", "value": "Yes" },
+          { "label": "Finance", "value": "Yes" },
+          { "label": "Service History", "value": "Available" },
+          { "label": "Tyre Condition", "value": "New" }
+        ]
+      }
+    },
+    {
+      "id": "6",
+      "title": "Yamaha Ray ZR 125 (2021)",
+      "subtitle": "[2020-2022] Street Rally",
+      "engine":"88",
+      "year": "2020",
+      "price": 60000,
+      "features": ["VERIFIED SELLER"],
+      "fuelType": "PETROL",
+      "mileage": 9500,
+      "transmission": "AUTOMATIC",
+      "owner": "1st",
+      "location": "Kandivali, Mumbai",
+      "postingDate": "04-SEP-24",
+      "description": "Yamaha Ray ZR 125 in great condition. Very low mileage with service records.",
+      "sellerName": "Rohit Verma",
+      "sellerImage": "/placeholder.svg?height=50&width=50",
+      "images": [
+        "https://www.yamaha-motor-india.com/theme/v4/images/webp_images/rayzr_all/ray-zr125fi-hybrid/color/black-disc.webp",
+        "https://www.yamaha-motor-india.com/theme/v4/images/webp_images/rayzr_all/ray-zr125fi-hybrid/color/blue.webp",
+        "https://www.yamaha-motor-india.com/theme/v3/image/ray-zr125fi-hybrid/color/Cyan-blue-drum.png"
+      ],
+      "overview": {
+        "location": "Kandivali East, Mumbai",
+        "additionalInfo": [
+          { "label": "Accidental", "value": "No" },
+          { "label": "Battery Condition", "value": "Good" },
+          { "label": "Vehicle Certified", "value": "Yes" },
+          { "label": "Color", "value": "Black" },
+          { "label": "Engine Capacity", "value": "125cc" },
+          { "label": "Insurance Type", "value": "Comprehensive" },
+          { "label": "Make Month", "value": "March" },
+          { "label": "Registration Place", "value": "MH" },
+          { "label": "Exchange", "value": "No" },
+          { "label": "Finance", "value": "No" },
+          { "label": "Service History", "value": "Available" },
+          { "label": "Tyre Condition", "value": "Good" }
+        ]
+      }
+    }
+  ]
+  

@@ -1,6 +1,6 @@
 "use client";
 
-import { Heart, BedDouble, Bath, Ruler } from "lucide-react";
+import { BedDouble, Bath, Ruler } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import Link  from "next/link";
 import {
@@ -21,7 +21,7 @@ interface RealEstateListing {
   id: string;
   image: string;
   price: number;
-  title: string;
+  model: string;
   location: string;
   bedrooms: number;
   bathrooms: number;
@@ -46,7 +46,7 @@ const sampleListings: RealEstateListing[] = [
     image:
       "https://www.guptasen.com/wp-content/uploads/2021/05/chand-terraces-for-sale-3-bhk.jpg",
     price: 8500000,
-    title: "3 BHK Apartment in Bandra West",
+    model: "3 BHK Apartment in Bandra West",
     location: "Mumbai, Maharashtra",
     bedrooms: 3,
     bathrooms: 2,
@@ -58,9 +58,9 @@ const sampleListings: RealEstateListing[] = [
   },
   {
     id: "2",
-    image:     "https://www.guptasen.com/wp-content/uploads/2021/05/chand-terraces-for-sale-3-bhk.jpg",
+    image:     "https://imagecdn.99acres.com/media1/25435/5/508705907M-1722657602457.webp",
     price: 15000000,
-    title: "4 BHK Villa in Koramangala",
+    model: "4 BHK Villa in Koramangala",
     location: "Bangalore, Karnataka",
     bedrooms: 4,
     bathrooms: 3,
@@ -73,9 +73,9 @@ const sampleListings: RealEstateListing[] = [
   {
     id: "3",
     image:
-      "https://www.guptasen.com/wp-content/uploads/2021/05/chand-terraces-for-sale-3-bhk.jpg",
+      "https://imagecdn.99acres.com/media1/25545/6/510906467M-1723531311271.webp",
     price: 6000000,
-    title: "2 BHK Flat in Andheri East",
+    model: "2 BHK Flat in Andheri East",
     location: "Mumbai, Maharashtra",
     bedrooms: 2,
     bathrooms: 2,
@@ -88,9 +88,9 @@ const sampleListings: RealEstateListing[] = [
   {
     id: "4",
     image:
-      "https://www.guptasen.com/wp-content/uploads/2021/05/chand-terraces-for-sale-3-bhk.jpg",
+      "https://imagecdn.99acres.com/media1/24869/16/497396056M-1718009900636.webp",
     price: 20000000,
-    title: "5 BHK Independent House in Vasant Vihar",
+    model: "5 BHK Independent House in Vasant Vihar",
     location: "New Delhi, Delhi",
     bedrooms: 5,
     bathrooms: 4,
@@ -103,9 +103,9 @@ const sampleListings: RealEstateListing[] = [
   {
     id: "5",
     image:
-      "https://www.guptasen.com/wp-content/uploads/2021/05/chand-terraces-for-sale-3-bhk.jpg",
+      "https://im.proptiger.com/1/3176158/6/kaleido-elevation-138511614.jpeg",
     price: 4500000,
-    title: "1 BHK Apartment in Kharadi",
+    model: "1 BHK Apartment in Kharadi",
     location: "Pune, Maharashtra",
     bedrooms: 1,
     bathrooms: 1,
@@ -118,9 +118,9 @@ const sampleListings: RealEstateListing[] = [
   {
     id: "6",
     image:
-      "https://www.guptasen.com/wp-content/uploads/2021/05/chand-terraces-for-sale-3-bhk.jpg",
+      "https://www.ziraholidays.com/wp-content/uploads/2022/01/landmark-villa-ecr.jpg",
     price: 12000000,
-    title: "3 BHK Villa in ECR",
+    model: "3 BHK Villa in ECR",
     location: "Chennai, Tamil Nadu",
     bedrooms: 3,
     bathrooms: 3,
@@ -157,23 +157,19 @@ function RealEstateListings({
           </SelectContent>
         </Select>
       </div>
+      
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         {listings.length > 0 ? (
           listings.map((property) => (
-            <Link key={property.id} href={'/coming_soon'}>
+            <Link key={property.id} href={`/house/${property.id}`}>
             <Card key={property.id} className="overflow-hidden">
               <CardHeader className="p-0 relative">
                 <img
                   src={property.image}
-                  alt={property.title}
+                  alt={property.model}
                   className="w-full h-48 object-cover"
                 />
-                <button
-                  className="absolute top-2 right-2 p-1 bg-white rounded-full"
-                  aria-label="Add to favorites"
-                >
-                  <Heart className="h-6 w-6 text-gray-500" />
-                </button>
+                
                 {property.isFeatured && (
                   <Badge className="absolute top-2 left-2" variant="secondary">
                     FEATURED
@@ -189,7 +185,7 @@ function RealEstateListings({
                     {property.type}
                   </Badge>
                 </div>
-                <h3 className="text-xl font-semibold mb-2">{property.title}</h3>
+                <h3 className="text-xl font-semibold mb-2">{property.model}</h3>
                 <p className="text-sm text-gray-500 mb-2">
                   {property.location}
                 </p>

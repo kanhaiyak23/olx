@@ -1,6 +1,6 @@
 'use client'
-
-import { Heart, Truck, Calendar, MapPin } from 'lucide-react'
+import { useState } from 'react'
+import {  Truck, Calendar, MapPin } from 'lucide-react'
 import { Badge } from "@/components/ui/badge"
 import { Card, CardContent, CardFooter, CardHeader } from "@/components/ui/card"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
@@ -114,83 +114,97 @@ const sampleListings: CommercialVehicleListing[] = [
 ]
 
 function CommercialVehiclesListings({ listings = sampleListings, searchTerm = "Commercial & Other Vehicles", totalAds = 2789 }: CommercialVehicleListingsProps) {
+  // State to track sorting order
+  const [sortOrder, setSortOrder] = useState<string>('date');
+
+  // Function to sort the listings
+  const sortListings = (listings: CommercialVehicleListing[]) => {
+    if (sortOrder === 'price-asc') {
+      return [...listings].sort((a, b) => a.price - b.price);
+    } else if (sortOrder === 'price-desc') {
+      return [...listings].sort((a, b) => b.price - a.price);
+    } else if (sortOrder === 'year') {
+      return [...listings].sort((a, b) => b.year - a.year); // Newest year first
+    }
+    return listings; // Default (date) case, return unsorted
+  };
+
+  const sortedListings = sortListings(listings);
+
   return (
     <div className="container mx-auto p-4">
       <div className="flex justify-between items-center mb-4">
-        <h1 className="text-2xl font-bold">Showing results for {searchTerm}</h1>
+        <h1 className="text-2xl font-bold"> {searchTerm}</h1>
         <Badge variant="secondary" className="text-lg">{totalAds} Ads</Badge>
       </div>
       <div className="flex justify-end mb-4">
-        <Select defaultValue="date">
+        {/* Sorting Dropdown */}
+        <Select value={sortOrder} onValueChange={(value) => setSortOrder(value)}>
           <SelectTrigger className="w-[180px]">
             <SelectValue placeholder="Sort by" />
           </SelectTrigger>
           <SelectContent>
             <SelectItem value="date">Date Published</SelectItem>
-            <SelectItem value="price">Price</SelectItem>
+            <SelectItem value="price-asc">Price: Low to High</SelectItem>
+            <SelectItem value="price-desc">Price: High to Low</SelectItem>
             <SelectItem value="year">Year</SelectItem>
           </SelectContent>
         </Select>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-        {listings.length > 0 ? (
-          listings.map((vehicle) => (
-            <Link key={vehicle.id}href={'/coming_soon'}>
-            <Card key={vehicle.id} className="overflow-hidden">
-              <CardHeader className="p-0 relative">
-                <img src={vehicle.image} alt={`${vehicle.brand} ${vehicle.model}`} className="w-full h-48 object-cover" />
-                <button className="absolute top-2 right-2 p-1 bg-white rounded-full" aria-label="Add to favorites">
-                  <Heart className="h-6 w-6 text-gray-500" />
-                </button>
-                {vehicle.isFeatured && (
-                  <Badge className="absolute top-2 left-2" variant="secondary">
-                    FEATURED
-                  </Badge>
-                )}
-              </CardHeader>
-              <CardContent className="p-4">
-                <div className="flex justify-between items-start mb-2">
-                  <h2 className="text-2xl font-bold">₹ {vehicle.price.toLocaleString()}</h2>
-                  <Badge variant="outline" className="text-xs">
-                    {vehicle.vehicleType}
-                  </Badge>
-                </div>
-                <h3 className="text-xl font-semibold mb-2">{vehicle.brand} {vehicle.model}</h3>
-                <div className="flex items-center space-x-4 text-sm text-gray-500 mb-2">
-                  <span className="flex items-center">
-                    <Calendar className="h-4 w-4 mr-1" />
-                    {vehicle.year}
-                  </span>
-                  <span className="flex items-center">
-                    <Truck className="h-4 w-4 mr-1" />
-                    {vehicle.mileage.toLocaleString()} km
-                  </span>
-                </div>
-                <p className="text-sm text-gray-500 flex items-center">
-                  <MapPin className="h-4 w-4 mr-1" />
-                  {vehicle.location}
-                </p>
-              </CardContent>
-              <CardFooter className="p-4 pt-0 flex justify-between items-center">
-                <p className="text-sm text-gray-500">{vehicle.date}</p>
-                <div className="flex items-center space-x-2">
-                  {vehicle.features.map((feature, index) => (
-                    <Badge key={index} variant="secondary" className="text-xs">
-                      {feature}
-                    </Badge>
-                  ))}
-                  {vehicle.features.length > 1 && (
-                    <Badge variant="secondary" className="text-xs cursor-pointer">
-                      +{vehicle.features.length - 1}
+        {sortedListings.length > 0 ? (
+          sortedListings.map((vehicle) => (
+            <Link key={vehicle.id} href={`/commercial_vehicle/${vehicle.id}`}>
+              <Card key={vehicle.id} className="overflow-hidden">
+                <CardHeader className="p-0 relative">
+                  <img src={vehicle.image} alt={`${vehicle.brand} ${vehicle.model}`} className="w-full h-48 object-cover" />
+                  
+                  {vehicle.isFeatured && (
+                    <Badge className="absolute top-2 left-2" variant="secondary">
+                      FEATURED
                     </Badge>
                   )}
-                  
-                </div>
-              </CardFooter>
-              
-            </Card>
-           </Link>
-            
+                </CardHeader>
+                <CardContent className="p-4">
+                  <div className="flex justify-between items-start mb-2">
+                    <h2 className="text-2xl font-bold">₹ {vehicle.price.toLocaleString()}</h2>
+                    <Badge variant="outline" className="text-xs">
+                      {vehicle.vehicleType}
+                    </Badge>
+                  </div>
+                  <h3 className="text-xl font-semibold mb-2">{vehicle.brand} {vehicle.model}</h3>
+                  <div className="flex items-center space-x-4 text-sm text-gray-500 mb-2">
+                    <span className="flex items-center">
+                      <Calendar className="h-4 w-4 mr-1" />
+                      {vehicle.year}
+                    </span>
+                    <span className="flex items-center">
+                      <Truck className="h-4 w-4 mr-1" />
+                      {vehicle.mileage.toLocaleString()} km
+                    </span>
+                  </div>
+                  <p className="text-sm text-gray-500 flex items-center">
+                    <MapPin className="h-4 w-4 mr-1" />
+                    {vehicle.location}
+                  </p>
+                </CardContent>
+                <CardFooter className="p-4 pt-0 flex justify-between items-center">
+                  <p className="text-sm text-gray-500">{vehicle.date}</p>
+                  <div className="flex items-center space-x-2">
+                    {vehicle.features.map((feature, index) => (
+                      <Badge key={index} variant="secondary" className="text-xs">
+                        {feature}
+                      </Badge>
+                    ))}
+                    {vehicle.features.length > 1 && (
+                      <Badge variant="secondary" className="text-xs cursor-pointer">
+                        +{vehicle.features.length - 1}
+                      </Badge>
+                    )}
+                  </div>
+                </CardFooter>
+              </Card>
+            </Link>
           ))
         ) : (
           <p className="col-span-3 text-center text-gray-500">No listings found.</p>
@@ -199,4 +213,5 @@ function CommercialVehiclesListings({ listings = sampleListings, searchTerm = "C
     </div>
   )
 }
+
 export default CommercialVehiclesListings;

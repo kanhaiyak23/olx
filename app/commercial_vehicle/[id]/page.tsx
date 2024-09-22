@@ -1,11 +1,10 @@
 "use client";
 
-import carDetailsf from "../../car_full_description.json";
+import commercialVehicleDetails from "../../commercial_vehicle_full_description.json";
 import { motion,AnimatePresence } from "framer-motion";
+import { Bell,Menu } from "lucide-react";
 import Loader from "@/app/loading/page";
-import { useEffect } from "react";
-
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useParams } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
@@ -16,156 +15,154 @@ import {
   Share2,
   ChevronLeft,
   ChevronRight,
-  ArrowUp,X,MessageCircle,Bell,Menu
-
+  ArrowUp,MessageCircle,X
 } from "lucide-react";
 
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 
-
 const relatedAds = [
   {
     id: 1,
-    image:
-      "https://i.pinimg.com/originals/7f/25/92/7f25923d54da53ec4efbf69260c6cd2c.jpg",
-    price: 525000,
-    title: "Honda City V MT Exclusive Edition",
-    year: 2017,
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSExqkmJU-JVV0nSreyhgLHn5zHrmE0dK9-Zg&s",
+    price: 1200000,
+    title: "Truck A",
+    year: 2023,
+  },
+  {
+    id: 2,
+    image: "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/b2ea5e75329623.5c49848d80871.png",
+    price: 900000,
+    title: "Truck B",
+    year: 2022,
   },
 ];
 
 const quickLinks = [
-  "Used Honda Cars in Mumbai",
-  "Used City Cars in Mumbai",
-  "Used Petrol Cars in Mumbai",
-  "Used Automatic Cars in Mumbai",
-  "Used Cars in Charni Road in Mumbai",
-  "Used Cars Priced Between 7 Lakhs and 8 Lakhs in Mumbai",
+  "Latest Commercial Vehicles",
+  "Vehicles Under 10 Lakhs",
+  "Top Rated Commercial Vehicles",
 ];
 
-export default function CarDetails() {
+export default function CommercialVehicleDetails() {
+  const[isDialogOpen,setIsDialogOpen] = useState(false);
   const params = useParams(); // Get the ID from the URL params
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  const[isDialogOpen,setIsDialogOpen]= useState(false)
-  const[isheader,setHeader] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [loading, setLoading] = useState(true);
   const id = params?.id;
   const [likedListings, setLikedListings] = useState<{
     [key: string]: boolean;
   }>({});
+
   const toggleLike = (listingId: string | number) => {
     setLikedListings((prev) => ({
-      ...prev, // Preserve previous liked listings
-      [listingId]: !prev[listingId], // Toggle the liked state for the clicked listing
+      ...prev,
+      [listingId]: !prev[listingId],
     }));
   };
+
   const heartAnimation = {
     initial: { scale: 1 },
     animate: { scale: 1.5 },
     transition: { duration: 0.2, ease: "easeInOut" },
   };
 
-  // Find the car details based on the ID from the JSON dataset
-  const cardetail = carDetailsf.find((car) => car.id === id);
+  const vehicleDetail = commercialVehicleDetails.find(
+    (vehicle) => vehicle.id === id
+  );
+
   useEffect(() => {
-    // Simulate loading delay (remove if data is loaded immediately)
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 1000); // 1-second delay for demonstration
+    }, 1000);
 
-    return () => clearTimeout(timer); // Cleanup the timer on unmount
+    return () => clearTimeout(timer);
   }, []);
 
   if (loading) {
-    return <Loader />; // Show loader while loading
+    return <Loader />;
   }
-  if (!cardetail) {
-    return <div>Car not found!</div>; // Handle the case where the car is not found
+
+  if (!vehicleDetail) {
+    return <div>Commercial vehicle not found!</div>;
   }
 
   const handleImageChange = (direction: "prev" | "next") => {
     setCurrentImageIndex((prevIndex) =>
       direction === "next"
-        ? prevIndex === cardetail.images.length - 1
+        ? prevIndex === vehicleDetail.images.length - 1
           ? 0
           : prevIndex + 1
         : prevIndex === 0
-        ? cardetail.images.length - 1
+        ? vehicleDetail.images.length - 1
         : prevIndex - 1
     );
   };
 
-  //share functionality
-  const shareCarDetails = async () => {
+  const shareVehicleDetails = async () => {
     const shareData = {
-      title: cardetail.title,
-      text: cardetail.description,
-      url: window.location.href, // Get the current URL
+      title: vehicleDetail.title,
+      text: vehicleDetail.description,
+      url: window.location.href,
     };
 
     try {
       await navigator.share(shareData);
-      console.log("Car details shared successfully!");
+      console.log("Commercial vehicle details shared successfully!");
     } catch (error) {
       console.error("Error sharing:", error);
     }
   };
-  
 
   return (
-    // <LoadScript googleMapsApiKey="AIzaSyDLiLsxcSQKTP8j-_UG18cciAHVGGHT4LA">
     <div className="min-h-screen bg-gray-100">
-      {/* header */}
       <header className="bg-white shadow-md">
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-          <Link href="/listing/car_listing" className="text-2xl font-bold text-blue-600">Car</Link>
+          <Link href="/listing/mobile_listing" className="text-2xl font-bold text-blue-600">Commercial Vehicle</Link>
           <nav className="hidden md:flex space-x-4">
             <Link href="/" className="text-gray-600 hover:text-blue-600">Home</Link>
-            <Link href="/listing/car_listing" className="text-gray-600 hover:text-blue-600">Categories</Link>
+            <Link href="/listing/commercial_vehicle" className="text-gray-600 hover:text-blue-600">Categories</Link>
             {/* <Link href="/deals" className="text-gray-600 hover:text-blue-600">Deals</Link> */}
             <Button variant="outline" size="sm">
               <Bell className="h-4 w-4 mr-2" />
               Notifications
             </Button>
           </nav>
-          <Button variant="ghost" size="sm" className="md:hidden" onClick={() =>setHeader(!setHeader)}>
+          <Button variant="ghost" size="sm" className="md:hidden" onClick={() => setIsMenuOpen(!isMenuOpen)}>
             <Menu className="h-6 w-6" />
           </Button>
         </div>
-        {isheader && (
+        {isMenuOpen && (
           <div className="md:hidden bg-white border-t">
             <Link href="/" className="block px-4 py-2 text-gray-600 hover:bg-gray-100">Home</Link>
-            <Link href="/listing/car_listing" className="block px-4 py-2 text-gray-600 hover:bg-gray-100">Categories</Link>
+            <Link href="/listing/commerical_vehicle" className="block px-4 py-2 text-gray-600 hover:bg-gray-100">Categories</Link>
             
             
           </div>
         )}
       </header>
 
-      {/* Main Content */}
       <main className="container mx-auto px-4 py-8">
-        {/* Breadcrumbs */}
         <div className="text-sm breadcrumbs mb-4">
           <ul className="flex space-x-2 text-gray-500">
             <li>
               <Link href="/">Home</Link>
             </li>
-            <li>Cars</li>
+            <li><Link href="/listing/commercial_vehicle">Commercial Vehicle</Link></li>
           </ul>
         </div>
 
-        {/* Car image Details */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="md:col-span-2">
-            <div className="relative mb-8">
-              <Image
-                src={cardetail.images[currentImageIndex]}
-                alt={cardetail.title}
-                width={600}
+            <div className="relative  mb-4 bg-white rounded-lg shadow-md overflow-hidden">
+              <img
+                src={vehicleDetail.images[currentImageIndex]}
+                alt={vehicleDetail.title}
+                width={800}
                 height={400}
-                className="w-full h-auto rounded-lg"
+                className="w-full h-auto rounded-lg object-cover"
               />
               <button
                 onClick={() => handleImageChange("prev")}
@@ -180,32 +177,44 @@ export default function CarDetails() {
                 <ChevronRight className="h-6 w-6" />
               </button>
               <button className="absolute top-4 right-6 bg-white rounded-full p-2 shadow-md">
-                <Share2 className="h-6 w-6" onClick={shareCarDetails} />
+                <Share2 className="h-6 w-6" onClick={shareVehicleDetails} />
               </button>
               <motion.button
                 className="absolute top-4 right-24 p-2 bg-white rounded-full"
-                onClick={() => toggleLike(cardetail.id)}
-                whileTap={heartAnimation.animate} // Animation when tapped
+                onClick={() => toggleLike(vehicleDetail.id)}
+                whileTap={heartAnimation.animate}
                 initial={heartAnimation.initial}
                 transition={heartAnimation.transition}
               >
                 <Heart
                   className={`h-6 w-6 ${
-                    likedListings[cardetail.id]
+                    likedListings[vehicleDetail.id]
                       ? "text-pink-500"
                       : "text-gray-500"
                   }`}
                 />
               </motion.button>
             </div>
+            <div className="flex space-x-2 mb-4 overflow-x-auto">
+              {vehicleDetail.images.map((image, index) => (
+                <img
+                  key={index}
+                  src={image}
+                  alt={`Thumbnail ${index + 1}`}
+                  width={80}
+                  height={80}
+                  className={`w-20 h-20 object-cover rounded-md cursor-pointer ${index === currentImageIndex ? 'border-2 border-blue-500' : ''}`}
+                  onClick={() => setCurrentImageIndex(index)}
+                />
+              ))}
+            </div>
 
-            {/* Car Description */}
             <Card className="mb-8">
               <CardContent className="p-6">
                 <div className="flex justify-between items-start mb-4">
                   <div>
                     <div className="flex space-x-2 mb-2">
-                      {cardetail.features.map((feature, index) => (
+                      {vehicleDetail.features.map((feature, index) => (
                         <Badge
                           key={index}
                           variant={index === 0 ? "default" : "secondary"}
@@ -215,40 +224,47 @@ export default function CarDetails() {
                         </Badge>
                       ))}
                     </div>
-                    <h1 className="text-2xl font-bold">{cardetail.title}</h1>
-                    <p className="text-gray-500">{cardetail.subtitle}</p>
+                    <h1 className="text-xl font-bold">{vehicleDetail.title}</h1>
+                    <p className="text-gray-500">{vehicleDetail.subtitle}</p>
                   </div>
                   <div>
                     <p className="text-xl font-semibold">
-                      ₹ {cardetail.price.toLocaleString("en-IN")}
+                      ₹ {vehicleDetail.price.toLocaleString("en-IN")}
                     </p>
                   </div>
                 </div>
 
                 <div className="grid grid-cols-2 gap-4 mb-6">
                   <div className="text-gray-700 font-semibold">
-                    Fuel Type:{" "}
-                    <span className="font-normal">{cardetail.fuelType}</span>
-                  </div>
-                  <div className="text-gray-700 font-semibold">
-                    Mileage:{" "}
-                    <span className="font-normal">{cardetail.mileage} KM</span>
-                  </div>
-                  <div className="text-gray-700 font-semibold">
-                    Transmission:{" "}
+                    Engine:{" "}
                     <span className="font-normal">
-                      {cardetail.transmission}
+                      {vehicleDetail.engine} cc
                     </span>
                   </div>
                   <div className="text-gray-700 font-semibold">
-                    Owner:{" "}
-                    <span className="font-normal">{cardetail.owner}</span>
+                    Mileage:{" "}
+                    <span className="font-normal">
+                      {vehicleDetail.mileage} km/l
+                    </span>
+                  </div>
+                  <div className="text-gray-700 font-semibold">
+                    Year:{" "}
+                    <span className="font-normal">{vehicleDetail.year}</span>
+                  </div>
+                  <div className="text-gray-700 font-semibold">
+                    Load Capacity:{" "}
+                    <span className="font-normal">
+                      {vehicleDetail.loadCapacity} kg
+                    </span>
                   </div>
                 </div>
 
-                <p className="text-gray-700">{cardetail.description}</p>
-                <div className="flex space-x-4">
-              <motion.button
+                <p className="text-gray-700">{vehicleDetail.description}</p>
+                <div className="flex space-x-4 pt-3">
+                  {/* <Button className="flex-1 bg-green-500 text-white">
+                    Buy Now
+                  </Button> */}
+                  <motion.button
                       className="flex-1 bg-blue-500 text-white py-2 px-4 rounded-md font-semibold flex items-center justify-center"
                       onClick={() => setIsDialogOpen(true)}
                       whileHover={{ scale: 1.05 }}
@@ -256,12 +272,11 @@ export default function CarDetails() {
                     >
                       <MessageCircle className="mr-2" /> Chat
                     </motion.button>
-            </div>
+                </div>
               </CardContent>
             </Card>
           </div>
 
-          {/* Related Ads */}
           <div>
             <h2 className="text-xl font-semibold mb-4">Related Ads</h2>
             <div className="grid grid-cols-1 gap-4 mb-4">
@@ -272,7 +287,7 @@ export default function CarDetails() {
                     alt={ad.title}
                     width={300}
                     height={200}
-                    className="w-full h-auto rounded-t-lg"
+                    className="w-full h-auto rounded-t-lg object-cover"
                   />
                   <CardContent className="p-4">
                     <p className="text-gray-700 font-semibold">{ad.title}</p>
@@ -284,11 +299,10 @@ export default function CarDetails() {
                 </Card>
               ))}
             </div>
-            
 
             <div className="mt-6">
               <h2 className="text-xl font-semibold mb-4">Quick Links</h2>
-              <ul className="space-y-2 text-gray-600">
+              <ul className="space-y-2 text-gray-500">
                 {quickLinks.map((link, index) => (
                   <li key={index}>
                     <Link href="#" className="hover:underline">
@@ -347,6 +361,5 @@ export default function CarDetails() {
         )}
       </AnimatePresence>
     </div>
-    // </LoadScript>
   );
 }
