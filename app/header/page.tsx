@@ -287,13 +287,18 @@ const mostAccurateListings = filteredListings.filter(listing => listing.score ==
 
               {isSignedIn && user ? (
                 <div className="flex items-center space-x-4">
-                  <div className="text-gray-700 font-semibold">
+                  <div className="text-gray-700  font-semibold">
                     {user.fullName || "User"}
                   </div>
                   <UserButton />
                 </div>
               ) : (
-                <SignInButton mode="modal" />
+                <div className="flex justify-center">
+  <div className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+    <SignInButton mode="modal" />
+  </div>
+</div>
+
               )}
 
               <Link href="/sell">
@@ -335,9 +340,7 @@ const mostAccurateListings = filteredListings.filter(listing => listing.score ==
                   onClick={() => setSelectedCategory(category.value)}
                 >
                   {category.name}
-                  {category.value === "" && (
-                    <ChevronDown size={14} className="inline ml-1" />
-                  )}
+                  
                 </button>
               ))}
             </div>

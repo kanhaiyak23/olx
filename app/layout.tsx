@@ -29,7 +29,14 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <ClerkProvider>{children}</ClerkProvider>
+        <ClerkProvider appearance={{
+        signIn: {
+          variables: {
+            colorPrimary: 'blue',
+            colorText: 'black',
+          },
+        },
+      }}>{children}</ClerkProvider>
         
       </body>
     </html>
