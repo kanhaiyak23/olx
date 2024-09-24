@@ -257,7 +257,7 @@ function OlxHeaderImproved() {
 
               <Dialog>
                 <DialogTrigger>
-                  <Bell size={24} className="text-gray-600 cursor-pointer" />
+                  <Bell className="text-gray-600 text-md cursor-pointer" />
                 </DialogTrigger>
                 <DialogContent className="bg-white p-6 rounded-lg shadow-lg max-w-md w-full">
                   <DialogHeader>
@@ -302,9 +302,9 @@ function OlxHeaderImproved() {
               )}
 
               <Link href="/sell">
-                <span className="relative inline-block text-[#002F34] font-bold py-1 px-2 md:py-1 md:px-4 rounded-full bg-white">
+                <span className="relative inline-block ml-1 md:ml-0 text-[#002F34] font-bold py-1 px-2 md:py-1 md:px-4 rounded-full bg-white">
   <span className="absolute inset-0 bg-gradient-to-r from-yellow-500 via-blue-500 to-lime-600 rounded-full p-[1px]"></span>
-  <span className="relative block bg-white rounded-full px-1 text-sm md:text-lg py-1 md:px-4 md:py-1 border-2 border-transparent">
+  <span className="relative block bg-white rounded-full px-1 text-xs md:text-lg py-1 md:px-4 md:py-1 border-2 border-transparent">
     + SELL
   </span>
 </span>
