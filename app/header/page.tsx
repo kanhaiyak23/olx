@@ -149,37 +149,38 @@ function OlxHeaderImproved() {
     ...mobile,
     ...commercial,
   ];
-  
 
   const filteredListings = combinedListings
-  .map((listing) => {
-    const queryLowerCase = searchQuery.toLowerCase();
-    
-    if (!listing.model) return null; // Skip if model doesn't exist
-    
-    const modelLowerCase = listing.model.toLowerCase();
-    
-    let score = 0;
-    
-    if (modelLowerCase === queryLowerCase) {
-      score = 3; // Exact match
-    } else if (modelLowerCase.startsWith(queryLowerCase)) {
-      score = 2; // Starts with query
-    } else if (modelLowerCase.includes(queryLowerCase)) {
-      score = 1; // Contains query
-    }
-    
-    return { ...listing, score };
-  })
-  .filter((listing) => listing !== null) // Remove listings with null values
-  .sort((a, b) => b.score - a.score); // Sort by highest score first
+    .map((listing) => {
+      const queryLowerCase = searchQuery.toLowerCase();
 
-// Find the highest score
-const highestScore = filteredListings.length > 0 ? filteredListings[0].score : 0;
+      if (!listing.model) return null; // Skip if model doesn't exist
 
-// Filter only listings with the highest score
-const mostAccurateListings = filteredListings.filter(listing => listing.score === highestScore);
+      const modelLowerCase = listing.model.toLowerCase();
 
+      let score = 0;
+
+      if (modelLowerCase === queryLowerCase) {
+        score = 3; // Exact match
+      } else if (modelLowerCase.startsWith(queryLowerCase)) {
+        score = 2; // Starts with query
+      } else if (modelLowerCase.includes(queryLowerCase)) {
+        score = 1; // Contains query
+      }
+
+      return { ...listing, score };
+    })
+    .filter((listing) => listing !== null) // Remove listings with null values
+    .sort((a, b) => b.score - a.score); // Sort by highest score first
+
+  // Find the highest score
+  const highestScore =
+    filteredListings.length > 0 ? filteredListings[0].score : 0;
+
+  // Filter only listings with the highest score
+  const mostAccurateListings = filteredListings.filter(
+    (listing) => listing.score === highestScore
+  );
 
   const notifications = [
     {
@@ -205,9 +206,9 @@ const mostAccurateListings = filteredListings.filter(listing => listing.score ==
   return (
     <div>
       <header className="bg-white border-b border-gray-200">
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto px-4 ">
           <div className="flex items-center justify-between py-2">
-            <div className="flex items-center space-x-4">
+            <div className="flex items-center mr-2 lg:space-x-4">
               <Image src="/logo.png" alt="logo" width={50} height={50} />
             </div>
 
@@ -226,7 +227,7 @@ const mostAccurateListings = filteredListings.filter(listing => listing.score ==
               </div>
             </div>
 
-            <div className="flex items-center space-x-6">
+            <div className="flex items-center w-[85%] md:w-[35%] justify-between lg:space-x-6">
               <Dialog>
                 <DialogTrigger>
                   <MessageCircle
@@ -286,33 +287,33 @@ const mostAccurateListings = filteredListings.filter(listing => listing.score ==
               </Dialog>
 
               {isSignedIn && user ? (
-                <div className="flex items-center space-x-4">
-                  <div className="text-gray-700  font-semibold">
+                <div className="flex items-center text-sm lg:space-x-4">
+                  <div className="text-gray-700 mx-2 font-semibold">
                     {user.fullName || "User"}
                   </div>
                   <UserButton />
                 </div>
               ) : (
                 <div className="flex justify-center">
-  <div className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-    <SignInButton mode="modal" />
-  </div>
-</div>
-
+                  <div className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                    <SignInButton mode="modal" />
+                  </div>
+                </div>
               )}
 
               <Link href="/sell">
-                <span className="relative inline-block text-[#002F34] font-bold py-1 px-4 rounded-full bg-white">
-                  <span className="absolute inset-0 bg-gradient-to-r from-yellow-500 via-blue-500 to-lime-600 rounded-full p-[1px]"></span>
-                  <span className="relative block bg-white rounded-full px-4 py-1 border-2 border-transparent">
-                    + SELL
-                  </span>
-                </span>
+                <span className="relative inline-block text-[#002F34] font-bold py-1 px-2 md:py-1 md:px-4 rounded-full bg-white">
+  <span className="absolute inset-0 bg-gradient-to-r from-yellow-500 via-blue-500 to-lime-600 rounded-full p-[1px]"></span>
+  <span className="relative block bg-white rounded-full px-1 text-sm md:text-lg py-1 md:px-4 md:py-1 border-2 border-transparent">
+    + SELL
+  </span>
+</span>
+
               </Link>
             </div>
           </div>
         </div>
-
+{/* search bar */}
         <div className="md:hidden flex justify-between items-center py-2 px-4 bg-gray-100">
           <Input
             type="text"
@@ -340,7 +341,6 @@ const mostAccurateListings = filteredListings.filter(listing => listing.score ==
                   onClick={() => setSelectedCategory(category.value)}
                 >
                   {category.name}
-                  
                 </button>
               ))}
             </div>
@@ -415,7 +415,7 @@ const mostAccurateListings = filteredListings.filter(listing => listing.score ==
               Search Results for {searchQuery}:
             </h2>
             {mostAccurateListings.length > 0 ? (
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 mt-2">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 mt-2 w-full">
                 {mostAccurateListings.map((listing) => (
                   <Card key={listing.id} className="overflow-hidden">
                     <CardHeader className="p-0 relative">
