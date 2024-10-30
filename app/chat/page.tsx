@@ -16,10 +16,10 @@ interface ChatMessage {
   timestamp: number;
   sellerid: string;
 }
-interface  ChatComponentProps {
-  listingId: string; // Explicitly typing props
-  sellerId: string; // Explicitly typing props
-}
+// interface  ChatComponentProps {
+//   listingId: string; // Explicitly typing props
+//   sellerId: string; // Explicitly typing props
+// }
 
 const ChatComponent: React.FC<{listingId:string,sellerId:string}> = ({ listingId, sellerId }) =>{
   const [socket, setSocket] = useState<ReturnType<typeof io> | null>(null);
