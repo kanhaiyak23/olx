@@ -7,10 +7,7 @@ import { Input } from "@/components/ui/input";
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 
 // Define the props interface
-interface ChatComponentProps {
-  listingId: string; // Define the type for listingId
-  sellerId: string;  // Define the type for sellerId
-}
+
 
 interface ChatMessage {
   senderId: string;
