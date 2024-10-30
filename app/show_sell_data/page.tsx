@@ -38,6 +38,7 @@ interface Listing {
   
 }
 
+
 export default function ShowListings() {
   const [listings, setListings] = useState<Listing[]>([])
   const{user}= useUser()

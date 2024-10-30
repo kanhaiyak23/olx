@@ -16,8 +16,12 @@ interface ChatMessage {
   timestamp: number;
   sellerid: string;
 }
+interface  ChatComponentProps {
+  listingId: string; // Explicitly typing props
+  sellerId: string; // Explicitly typing props
+}
 
-export default function ChatComponent( listingId:string, sellerId : string) {
+const ChatComponent: React.FC<{listingId:string,sellerId:string}> = ({ listingId, sellerId }) =>{
   const [socket, setSocket] = useState<ReturnType<typeof io> | null>(null);
   const [chatMessages, setChatMessages] = useState<ChatMessage[]>([]);
   const [currentMessage, setCurrentMessage] = useState('');
@@ -119,3 +123,4 @@ export default function ChatComponent( listingId:string, sellerId : string) {
     </Card>
   );
 }
+export default ChatComponent
