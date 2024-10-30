@@ -321,7 +321,8 @@ export default function CarDetails() {
               exit={{ scale: 0.9, y: 20 }}
             >
               <div className="flex justify-between items-center mb-4">
-                <h2 className="text-2xl font-bold">Chat Coming Soon!</h2>
+                <h2 className="text-2xl font-bold">Chat C
+                  oming Soon!</h2>
                 <button
                   onClick={() => setIsDialogOpen(false)}
                   className="text-gray-500 hover:text-gray-700"

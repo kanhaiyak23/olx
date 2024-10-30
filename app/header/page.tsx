@@ -61,6 +61,7 @@ function OlxHeaderImproved() {
 
   const { isSignedIn } = useAuth();
   const { user } = useUser();
+
   const [likedListings, setLikedListings] = useState<{
     [key: string]: boolean;
   }>({});
@@ -300,20 +301,33 @@ function OlxHeaderImproved() {
                   </div>
                 </div>
               )}
-
-              <Link href="/sell">
-                <span className="relative inline-block ml-1 md:ml-0 text-[#002F34] font-bold py-1 px-2 md:py-1 md:px-4 rounded-full bg-white">
-  <span className="absolute inset-0 bg-gradient-to-r from-yellow-500 via-blue-500 to-lime-600 rounded-full p-[1px]"></span>
-  <span className="relative block bg-white rounded-full px-1 text-xs md:text-lg py-1 md:px-4 md:py-1 border-2 border-transparent">
-    + SELL
-  </span>
-</span>
-
-              </Link>
+              {isSignedIn && user ? (
+                <Link href="/sell">
+                  <span className="relative inline-block ml-1 md:ml-0 text-[#002F34] font-bold py-1 px-2 md:py-1 md:px-4 rounded-full bg-white">
+                    <span className="absolute inset-0 bg-gradient-to-r from-yellow-500 via-blue-500 to-lime-600 rounded-full p-[1px]"></span>
+                    <span className="relative block bg-white rounded-full px-1 text-xs md:text-lg py-1 md:px-4 md:py-1 border-2 border-transparent">
+                      + SELL
+                    </span>
+                  </span>
+                </Link>
+              ) : (
+                
+                  <span className="relative inline-block ml-1 md:ml-0 text-[#002F34] font-bold py-1 px-2 md:py-1 md:px-4 rounded-full bg-white">
+                  <span className="absolute inset-0 bg-gradient-to-r from-yellow-500 via-blue-500 to-lime-600 rounded-full p-[1px]"></span>
+                  <span className="relative block bg-white rounded-full px-1 text-xs md:text-lg py-1 md:px-4 md:py-1 border-2 border-transparent">
+                  <SignInButton mode="modal">
+                    + SELL
+                  </SignInButton>
+                  </span>
+            </span>
+            
+                  
+                
+              )}
             </div>
           </div>
         </div>
-{/* search bar */}
+        {/* search bar */}
         <div className="md:hidden flex justify-between items-center py-2 px-4 bg-gray-100">
           <Input
             type="text"

@@ -15,6 +15,17 @@ const nextConfig = {
       dangerouslyAllowSVG: true, // Enable SVG images
       contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;", // Optional: Improve security for SVGs
     },
+    // env: {
+    //   MONGODB_URI: process.env.MONGODB_URI,
+    // }
+   
+      env: {
+        DB_HOST: process.env.DB_HOST,
+        DB_USER: process.env.DB_USER,
+        DB_PASSWORD: process.env.DB_PASSWORD,
+        DB_NAME: process.env.DB_NAME,
+      },
+    
   };
   
   export default nextConfig;

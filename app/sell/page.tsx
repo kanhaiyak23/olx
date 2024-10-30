@@ -13,9 +13,11 @@ import { Camera, Upload } from 'lucide-react'
 import { db } from '@/lib/firebase'
 import { collection, addDoc } from 'firebase/firestore'
 import { getStorage, ref, uploadBytes, getDownloadURL } from 'firebase/storage'
+import { useUser } from '@clerk/nextjs'
 // import { getAuth, onAuthStateChanged } from "firebase/auth";
 export default function Form() {
   const router = useRouter()
+  const { user } = useUser(); 
   const [images, setImages] = useState<File[]>([])
   const [sellerPhoto, setSellerPhoto] = useState<string | null>(null)
   const [formData, setFormData] = useState({
@@ -31,7 +33,8 @@ export default function Form() {
     price: "",
     state: "",
     name: "",
-    phone: ""
+    phone: "",
+    sellerId:""
   })
 
   const fileInputRef = useRef<HTMLInputElement>(null)
@@ -91,7 +94,7 @@ export default function Form() {
   
   const handleFormSubmit = async () => {
     const storage = getStorage();
-        
+    const sellerId = user ? user.id : "";
     // Proceed with uploading files without authentication
     const imageUrls = await Promise.all(
       images.map(async (image) => {
@@ -113,6 +116,7 @@ export default function Form() {
     const newListing = {
       ...formData,
       images: imageUrls,
+      sellerId:sellerId,
       sellerPhoto: sellerPhotoUrl,
       createdAt: new Date().toISOString()
     };

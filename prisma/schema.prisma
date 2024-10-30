@@ -1,0 +1,69 @@
+// // prisma/schema.prisma
+
+// generator client {
+//   provider = "prisma-client-js"
+// }
+
+// datasource db {
+//   provider = "mysql"
+//   url      = env("DATABASE_URL")
+// }
+
+// model User {
+//   id           String   @id @default(uuid())
+//   username     String   @unique
+//   profileImage String?
+//   status       String   @default("offline")
+//   createdAt    DateTime @default(now())
+//   updatedAt    DateTime @updatedAt
+//   chats        ChatParticipant[] //
+//   messages     Message[]
+// }
+
+// model Chat {
+//   id           String   @id @default(uuid())
+//   createdAt    DateTime @default(now())
+//   updatedAt    DateTime @updatedAt
+//   participants ChatParticipant[]
+//   messages     Message[]
+// }
+
+// model ChatParticipant {
+//   chat   Chat   @relation(fields: [chatId], references: [id])
+//   chatId String
+//   user   User   @relation(fields: [userId], references: [id])
+//   userId String
+
+//   @@id([chatId, userId])
+// }
+
+// model Message {
+//   id        String   @id @default(uuid())
+//   chat      Chat     @relation(fields: [chatId], references: [id])
+//   chatId    String
+//   sender    User     @relation(fields: [senderId], references: [id])
+//   senderId  String
+//   text      String? 
+//   image     String?
+//   createdAt DateTime @default(now())
+//   isRead    Boolean  @default(false)
+// }
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model Chat {
+  id        String   @id @default(uuid()) // Unique chat ID
+  senderId  String   // ID of the sender
+  sellerId  String
+  chatId    String
+  text      String  // Message text
+  image     String?  // Optional image URL or path
+  createdAt DateTime @default(now()) // Timestamp of message creation
+}
