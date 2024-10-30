@@ -1,10 +1,16 @@
-'use client'
+'use client';
 import { useState, useEffect, useRef } from 'react';
 import io from 'socket.io-client';
 import { useUser } from "@clerk/nextjs";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
+
+// Define the props interface
+interface ChatComponentProps {
+  listingId: string; // Define the type for listingId
+  sellerId: string;  // Define the type for sellerId
+}
 
 interface ChatMessage {
   senderId: string;
@@ -14,12 +20,7 @@ interface ChatMessage {
   sellerid: string;
 }
 
-interface ChatComponentProps {
-  listingId: string;
-  sellerId: string;
-}
-
-export default function ChatComponent({ listingId, sellerId }: ChatComponentProps) {
+export default function ChatComponent( listingId:string, sellerId : string) {
   const [socket, setSocket] = useState<ReturnType<typeof io> | null>(null);
   const [chatMessages, setChatMessages] = useState<ChatMessage[]>([]);
   const [currentMessage, setCurrentMessage] = useState('');

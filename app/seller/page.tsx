@@ -1,13 +1,19 @@
-'use client';
+"use client";
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect } from "react";
 import { useUser } from "@clerk/nextjs";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
-import ChatComponent from '../chat/page';
-import io from 'socket.io-client';
-import { useRouter } from 'next/navigation';
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog";
+import ChatComponent from "../chat/page";
+import io from "socket.io-client";
+import { useRouter } from "next/navigation";
 
 interface Message {
   senderId: string;
@@ -21,23 +27,23 @@ interface SellerMessagesProps {
   sellerId: string;
 }
 
-export default function SellerMessages({ listingId, sellerId }: SellerMessagesProps) {
+export default function SellerMessages({
+  listingId,
+  sellerId,
+}: SellerMessagesProps) {
   const { user, isLoaded } = useUser();
   const [messages, setMessages] = useState<Message[]>([]);
   const [socket, setSocket] = useState<ReturnType<typeof io> | null>(null);
   const router = useRouter();
- 
 
   useEffect(() => {
     if (isLoaded && !user) {
-      router.push('/'); // Redirect to home page if not logged in
+      router.push("/"); // Redirect to home page if not logged in
     }
   }, [isLoaded, user, router]);
 
   useEffect(() => {
-    const newSocket  = io(`https://olx-backend-yclp.onrender.com`
-      
-    );
+    const newSocket = io(`https://olx-backend-yclp.onrender.com`);
     setSocket(newSocket);
 
     return () => {
@@ -54,32 +60,32 @@ export default function SellerMessages({ listingId, sellerId }: SellerMessagesPr
         socket.emit("join room", roomId);
       });
 
-      socket.on('room joined', (joinedRoomId:string) => {
+      socket.on("room joined", (joinedRoomId: string) => {
         console.log(`Joined room: ${joinedRoomId}`);
       });
 
-      socket.on('previous messages', (previousMessages: Message[]) => {
-        console.log('Received previous messages:', previousMessages);
+      socket.on("previous messages", (previousMessages: Message[]) => {
+        console.log("Received previous messages:", previousMessages);
         setMessages(previousMessages);
       });
 
-      socket.on('new message notification', (data: Message) => {
-        console.log('New message notification:', data);
+      socket.on("new message notification", (data: Message) => {
+        console.log("New message notification:", data);
         setMessages((prevMessages) => [...prevMessages, data]);
       });
 
-      socket.on('chat message', (data: Message) => {
-        console.log('Chat message received:', data);
+      socket.on("chat message", (data: Message) => {
+        console.log("Chat message received:", data);
         setMessages((prevMessages) => [...prevMessages, data]);
       });
     }
 
     return () => {
       if (socket) {
-        socket.off('room joined');
-        socket.off('previous messages');
-        socket.off('new message notification');
-        socket.off('chat message');
+        socket.off("room joined");
+        socket.off("previous messages");
+        socket.off("new message notification");
+        socket.off("chat message");
       }
     };
   }, [socket, user, listingId, sellerId]);
@@ -110,7 +116,10 @@ export default function SellerMessages({ listingId, sellerId }: SellerMessagesPr
                   <DialogHeader>
                     <DialogTitle>Chat with Buyer</DialogTitle>
                   </DialogHeader>
-                  <ChatComponent listingId={message.listingId} sellerId={user.id} />
+                  <ChatComponent
+                    listingId={message.listingId}
+                    sellerId={user.id}
+                  />
                 </DialogContent>
               </Dialog>
             </CardContent>
