@@ -7,8 +7,6 @@ import { Input } from "@/components/ui/input";
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 
 // Define the props interface
-
-
 interface ChatMessage {
   senderId: string;
   listingId: string;
@@ -16,12 +14,13 @@ interface ChatMessage {
   timestamp: number;
   sellerid: string;
 }
-// interface  ChatComponentProps {
-//   listingId: string; // Explicitly typing props
-//   sellerId: string; // Explicitly typing props
-// }
 
-const ChatComponent: React.FC<{listingId:string,sellerId:string}> = ({ listingId, sellerId }) =>{
+interface ChatComponentProps {
+  listingId: string;
+  sellerId: string;
+}
+
+const ChatComponent: React.FC<ChatComponentProps> = ({ listingId, sellerId }) => {
   const [socket, setSocket] = useState<ReturnType<typeof io> | null>(null);
   const [chatMessages, setChatMessages] = useState<ChatMessage[]>([]);
   const [currentMessage, setCurrentMessage] = useState('');
@@ -122,5 +121,6 @@ const ChatComponent: React.FC<{listingId:string,sellerId:string}> = ({ listingId
       </CardFooter>
     </Card>
   );
-}
-export default ChatComponent
+};
+
+export default ChatComponent; // Make sure this is the correct export
