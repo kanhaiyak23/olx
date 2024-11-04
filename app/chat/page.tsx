@@ -20,7 +20,7 @@ interface ChatComponentProps {
   sellerId: string;
 }
 
-const ChatComponent: React.FC<ChatComponentProps> = ({ listingId, sellerId }) => {
+export default function ChatComponent({ listingId, sellerId }: ChatComponentProps) {
   const [socket, setSocket] = useState<ReturnType<typeof io> | null>(null);
   const [chatMessages, setChatMessages] = useState<ChatMessage[]>([]);
   const [currentMessage, setCurrentMessage] = useState('');
@@ -121,6 +121,4 @@ const ChatComponent: React.FC<ChatComponentProps> = ({ listingId, sellerId }) =>
       </CardFooter>
     </Card>
   );
-};
-
-export default ChatComponent; // Make sure this is the correct export
+}
