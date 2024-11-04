@@ -130,7 +130,7 @@ export default function ShowListings() {
                     <PhoneIcon className="w-4 h-4 mr-2" />
                     Contact
                   </Button>
-                  {user && user.id !== listing.sellerId && (
+                  {user  && (
                     <Dialog>
                       <DialogTrigger asChild>
                         <Button variant="outline" size="sm">
@@ -151,16 +151,13 @@ export default function ShowListings() {
                   {user && (
           <Dialog>
           <DialogTrigger asChild>
-            <Button variant="outline" size="sm">
-              <MessageCircle className="w-4 h-4 mr-2" />
-              Chat with Buyer 
-            </Button>
+            
           </DialogTrigger>
           <DialogContent className="sm:max-w-md">
-            <DialogHeader>
+            {/* <DialogHeader> */}
               <DialogTitle>View Your message</DialogTitle>
-            </DialogHeader>
-            <ChatComponent listingId={listing.id} sellerId={listing.sellerId} />
+            {/* </DialogHeader>
+            <ChatComponent listingId={listing.id} sellerId={listing.sellerId} /> */}
           </DialogContent>
         </Dialog>
         

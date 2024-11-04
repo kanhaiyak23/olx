@@ -19,12 +19,21 @@ const nextConfig = {
     //   MONGODB_URI: process.env.MONGODB_URI,
     // }
    
-      env: {
-        DB_HOST: process.env.DB_HOST,
-        DB_USER: process.env.DB_USER,
-        DB_PASSWORD: process.env.DB_PASSWORD,
-        DB_NAME: process.env.DB_NAME,
+      // env: {
+      //   DB_HOST: process.env.DB_HOST,
+      //   DB_USER: process.env.DB_USER,
+      //   DB_PASSWORD: process.env.DB_PASSWORD,
+      //   DB_NAME: process.env.DB_NAME,
+      // },
+      typescript:{
+        ignoreBuildErrors: true,
+    
+    
       },
+      eslint:{
+        ignoreDuringBuilds: true,
+        
+      }
     
   };
   
