@@ -116,9 +116,10 @@ export default function ChatComponent({ listingId, sellerId }: ChatComponentProp
             onChange={(e) => setCurrentMessage(e.target.value)}
             onKeyPress={handleKeyPress}
           />
-          <Button onClick={sendMessage}>Send</Button>
+          <Button onClick={sendMessage}>Send </Button>
         </div>
       </CardFooter>
     </Card>
   );
 }
+ 
